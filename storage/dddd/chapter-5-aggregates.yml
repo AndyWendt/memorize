@@ -1,0 +1,30 @@
+---
+
+- question: "What are entities?"
+  tags: [tactical]
+  answer: "Entities are often mutable (though not of necessity) objects that are unique even when their values correalate to objects of the same type (in contrast to a value object)."
+
+- question: "What are the dangers of over-abstracting?"
+  tags: []
+  answer: ""
+
+- question: "What are some examples of entities and why?"
+  tags: []
+  answer: ""
+
+- question: "What are some examples of value objects and why?"
+  tags: []
+  answer: ""
+
+- question: "What are the steps/rules to creating a right-sized aggregate?"
+  tags: []
+  answer: ""
+
+- question: "What are the rules of Aggregate design?"
+  tags: []
+  answer: >
+    1. Protect business invariants inside Aggregate boundaries
+    2. Design small Aggregates.
+    3. Reference Other Aggregates by Identity Only
+    4. Update Other Aggregates Using Eventual Consistency
+
