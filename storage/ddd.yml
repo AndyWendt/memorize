@@ -1,0 +1,5 @@
+---
+
+- question: "What are entities?"
+  answer: "Entities are often mutable (though not of necessity) objects that are unique even when their values correalate to objects of the same type (in contrast to a value object)."
+  tags: [tactical]
