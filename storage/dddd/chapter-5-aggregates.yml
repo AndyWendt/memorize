@@ -28,3 +28,22 @@
     3. Reference Other Aggregates by Identity Only
     4. Update Other Aggregates Using Eventual Consistency
 
+- question: "Describe the first rule of aggregate design"
+  tags: []
+  answer: ""
+
+- question: "Describe the second rule of aggregate design"
+  tags: []
+  answer: ""
+
+- question: "Describe the third rule of aggregate design"
+  tags: []
+  answer: ""
+
+- question: "Describe the fourth rule of aggregate design"
+  tags: []
+  answer: ""
+
+- question: "Describe the fifth rule of aggregate design"
+  tags: []
+  answer: "There's only four rules"
