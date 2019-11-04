@@ -6,7 +6,11 @@
 
 - question: "What are the dangers of over-abstracting?"
   tags: []
-  answer: ""
+  answer: >
+    - The language of the abstractions does not match the language of the model.  This language will creep into the user domain.
+    - Makes it difficult to model the individual types
+    - Leads to a complex heirarchy and special cases
+    - An excessive amount of code because you're trying to solve an unsolvable problem and attempting to solve future needs that are unknown
 
 - question: "What are some examples of entities and why?"
   tags: []
@@ -18,7 +22,8 @@
 
 - question: "What are the steps/rules to creating a right-sized aggregate?"
   tags: []
-  answer: ""
+  answer: >
+    1. start off by designing small, cohesive aggregates by creating one entity per aggregate and making it the root.
 
 - question: "What are the rules of Aggregate design?"
   tags: []
