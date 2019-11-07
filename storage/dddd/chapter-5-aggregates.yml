@@ -2,7 +2,9 @@
 
 - question: "What are entities?"
   tags: [tactical]
-  answer: "Entities are often mutable (though not of necessity) objects that are unique even when their values correalate to objects of the same type (in contrast to a value object)."
+  answer: >
+    Entities are often mutable (though not of necessity) objects that are unique even when their values
+    correalate to objects of the same type (in contrast to a value object).
 
 - question: "What are the dangers of over-abstracting?"
   tags: []
@@ -48,11 +50,16 @@
 
 - question: "Describe the first rule of aggregate design"
   tags: []
-  answer: "foo 1"
+  answer: >
+    The business should ultimately determine Aggregate compositions based on what must
+    be consistent when a transaction is committed.
 
 - question: "Describe the second rule of aggregate design"
   tags: []
-  answer: "foo 2"
+  answer: >
+    The memory footprint and transactional scope of each Aggregate should be relatively small. Whenever needed,
+    break up larger aggregates into smaller aggregates so that each Aggregate will be easier to work on.
+    If your Aggregate is trying to do too many things, it is not following SRP.
 
 - question: "Describe the third rule of aggregate design"
   tags: []
