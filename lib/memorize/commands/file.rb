@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+require 'yaml'
 require_relative '../command'
 
 module Memorize
@@ -11,8 +11,13 @@ module Memorize
       end
 
       def execute(input: $stdin, output: $stdout)
-        # Command logic goes here ...
-        output.puts @path
+        output.puts read
+      end
+
+      private
+
+      def read
+        YAML.load(::File.read("#{Dir.getwd}/storage/#{@path}.yml"))
       end
     end
   end
