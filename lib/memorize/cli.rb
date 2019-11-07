@@ -29,17 +29,5 @@ module Memorize
         Memorize::Commands::File.new(options).execute
       end
     end
-
-    desc 'test', 'Command description...'
-    method_option :help, aliases: '-h', type: :boolean,
-                         desc: 'Display usage information'
-    def test(*)
-      if options[:help]
-        invoke :help, ['test']
-      else
-        require_relative 'commands/test'
-        Memorize::Commands::Test.new(options).execute
-      end
-    end
   end
 end
