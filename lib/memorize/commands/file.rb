@@ -37,7 +37,7 @@ module Memorize
       private
 
       def questions
-        YAML.load(::File.read("#{Dir.getwd}/storage/#{@path}.yml"))
+        YAML.load(::File.read("#{Dir.getwd}/#{@path}"))
       end
     end
   end
