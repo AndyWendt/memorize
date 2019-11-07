@@ -17,15 +17,17 @@ module Memorize
         # output.puts questions
         questions.each do |question|
           prompt.say("\n")
-          answer = prompt.ask(question["question"], echo: true)
-          # prompt.multiline("Description?")
+          answer = prompt.multiline(question["question"]).join("\n")
           prompt.say("\n")
+
           prompt.say("=====Question=====")
           prompt.say(question["question"])
           prompt.say("\n")
+
           prompt.say("=====Answer=====")
           output.puts parsed = TTY::Markdown.parse(question["answer"])
           prompt.say("\n")
+
           prompt.say("=====Your Answer=====")
           output.puts TTY::Markdown.parse(answer)
           prompt.say("\n")
