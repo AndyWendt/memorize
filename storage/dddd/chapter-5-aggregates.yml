@@ -40,7 +40,7 @@
 
 - question: "What are the rules of Aggregate design?"
   tags: []
-  answer: >
+  answer: |
     1. Protect business invariants inside Aggregate boundaries
     2. Design small Aggregates.
     3. Reference Other Aggregates by Identity Only
@@ -65,3 +65,9 @@
 - question: "Describe the fifth rule of aggregate design"
   tags: []
   answer: "There's only four rules"
+
+- question: "Describe an Anemic Domain Model"
+  tags: []
+  answer: >
+    Where all of your Aggregates have only public accessors but no real business behavior.  All of the overhead with
+    none of the benefits.  Business logic can also leak into the Application Services above your model.
