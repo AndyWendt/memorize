@@ -63,7 +63,8 @@
 
 - question: "Describe the third rule of aggregate design"
   tags: []
-  answer: "foo 3"
+  answer: >
+    This helps keep Aggregates small and prevents reaching out to modify multiple Aggregates in the same transaction.
 
 - question: "Describe the fourth rule of aggregate design"
   tags: []
