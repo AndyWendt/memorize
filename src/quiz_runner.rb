@@ -5,7 +5,14 @@ module Quiz
     end
 
     def run
-      puts @file
+      puts read(@file)
+    end
+
+    private
+
+    def read(file)
+      directory ||= Dir.getwd
+      File.read("#{directory}/#{file}")
     end
   end
 end
