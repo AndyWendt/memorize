@@ -15,7 +15,7 @@ module Memorize
       def execute(input: $stdin, output: $stdout)
         prompt = TTY::Prompt.new
         # output.puts questions
-        questions.each do |question|
+        questions.shuffle.each do |question|
           prompt.say("\n")
           answer = prompt.multiline(question["question"]).join("\n")
           prompt.say("\n")
