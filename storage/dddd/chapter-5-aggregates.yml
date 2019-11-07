@@ -50,30 +50,34 @@
 
 - question: "Describe the first rule of aggregate design"
   tags: []
-  answer: >
+  answer: |
+    **Protect Business Invariants inside Aggregate Boundaries**
     The business should ultimately determine Aggregate compositions based on what must
     be consistent when a transaction is committed.
 
 - question: "Describe the second rule of aggregate design"
   tags: []
-  answer: >
+  answer: |
+    **Design Small Aggregates**
     The memory footprint and transactional scope of each Aggregate should be relatively small. Whenever needed,
     break up larger aggregates into smaller aggregates so that each Aggregate will be easier to work on.
     If your Aggregate is trying to do too many things, it is not following SRP.
 
 - question: "Describe the third rule of aggregate design"
   tags: []
-  answer: >
+  answer: |
+    **Reference Other Aggregates by Identity Only**
     This helps keep Aggregates small and prevents reaching out to modify multiple Aggregates in the same transaction.
 
 - question: "Describe the fourth rule of aggregate design"
   tags: []
-  answer: "foo 4"
+  answer: |
+    **Update Other Aggregates Using Eventual Consistency**
+    Other aggregates should be eventually consistent with the aggregate that you're currently updating.
 
 - question: "Describe the fifth rule of aggregate design"
   tags: []
-  answer: >
-    Other aggregates should be eventually consistent with the aggregate that you're currently updating.
+  answer: "There is no fifth rule"
 
 - question: "Describe an Anemic Domain Model"
   tags: []
