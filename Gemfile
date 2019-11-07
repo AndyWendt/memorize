@@ -2,5 +2,7 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-# Specify your gem's dependencies in memorize.gemspec
-gemspec
+
+gem "tty", "~> 0.10.0"
+gem "tty-prompt", "~> 0.19.0"
+

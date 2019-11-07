@@ -14,11 +14,11 @@
 
 - question: "What are some examples of entities and why?"
   tags: []
-  answer: ""
+  answer: "asdfadf asadf"
 
 - question: "What are some examples of value objects and why?"
   tags: []
-  answer: ""
+  answer: "fizz buzz"
 
 - question: "What are the steps/rules to creating a right-sized aggregate?"
   tags: []
@@ -35,19 +35,19 @@
 
 - question: "Describe the first rule of aggregate design"
   tags: []
-  answer: ""
+  answer: "foo 1"
 
 - question: "Describe the second rule of aggregate design"
   tags: []
-  answer: ""
+  answer: "foo 2"
 
 - question: "Describe the third rule of aggregate design"
   tags: []
-  answer: ""
+  answer: "foo 3"
 
 - question: "Describe the fourth rule of aggregate design"
   tags: []
-  answer: ""
+  answer: "foo 4"
 
 - question: "Describe the fifth rule of aggregate design"
   tags: []
