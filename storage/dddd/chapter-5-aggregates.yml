@@ -14,11 +14,24 @@
 
 - question: "What are some examples of entities and why?"
   tags: []
-  answer: "asdfadf asadf"
+  answer: |
+    - Accounts
+    - Invoices
+    - Time Entries
+    - Attachments
+    - Posts
+    - Tasks
+    - Users
 
 - question: "What are some examples of value objects and why?"
   tags: []
-  answer: "fizz buzz"
+  answer: |
+    - Tax Rates
+    - Urls / Links
+    - Addresses
+    - Roles
+    - Tags
+    - Time
 
 - question: "What are the steps/rules to creating a right-sized aggregate?"
   tags: []
