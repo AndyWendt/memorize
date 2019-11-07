@@ -6,7 +6,7 @@
 
 - question: "What are the dangers of over-abstracting?"
   tags: []
-  answer: >
+  answer: |
     - The language of the abstractions does not match the language of the model.  This language will creep into the user domain.
     - Makes it difficult to model the individual types
     - Leads to a complex heirarchy and special cases

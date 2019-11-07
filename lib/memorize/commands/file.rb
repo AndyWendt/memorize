@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 require 'yaml'
+require 'tty-markdown'
 require "tty-prompt"
 require_relative '../command'
 
@@ -23,10 +24,10 @@ module Memorize
           prompt.say(question["question"])
           prompt.say("\n")
           prompt.say("=====Answer=====")
-          prompt.say(question["answer"])
+          output.puts parsed = TTY::Markdown.parse(question["answer"])
           prompt.say("\n")
           prompt.say("=====Your Answer=====")
-          prompt.say(answer)
+          output.puts TTY::Markdown.parse(answer)
           prompt.say("\n")
         end
       end
