@@ -72,7 +72,8 @@
 
 - question: "Describe the fifth rule of aggregate design"
   tags: []
-  answer: "There's only four rules"
+  answer: >
+    Other aggregates should be eventually consistent with the aggregate that you're currently updating.
 
 - question: "Describe an Anemic Domain Model"
   tags: []
