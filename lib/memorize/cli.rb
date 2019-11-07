@@ -18,15 +18,15 @@ module Memorize
     end
     map %w(--version -v) => :version
 
-    desc 'file', 'Command description...'
+    desc 'file [PATH]', 'Command description...'
     method_option :help, aliases: '-h', type: :boolean,
                          desc: 'Display usage information'
-    def file(*)
+    def file(path)
       if options[:help]
         invoke :help, ['file']
       else
         require_relative 'commands/file'
-        Memorize::Commands::File.new(options).execute
+        Memorize::Commands::File.new(options, path).execute
       end
     end
   end
