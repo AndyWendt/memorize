@@ -10,12 +10,22 @@ module Memorize
       def initialize(options, path)
         @options = options
         @path = path
+        @prompt = TTY::Prompt.new
       end
 
       def execute(input: $stdin, output: $stdout)
-        prompt = TTY::Prompt.new
-        # output.puts questions
-        questions.shuffle.each do |question|
+        @output = output
+        question_run(questions)
+      end
+
+      private
+
+      attr_reader :prompt, :output
+
+      def question_run(questions)
+        return unless questions.length > 0
+
+        do_over = questions.shuffle.reduce([]) do |redo_questions, question|
           prompt.say("\n")
           answer = prompt.multiline(question['question']).join("\n")
           prompt.say("\n")
@@ -32,14 +42,19 @@ module Memorize
           output.puts TTY::Markdown.parse(answer)
           prompt.say("\n")
 
-          prompt.ask('What could be improved about this answer?')
-          improvement = prompt.say('=====Improvement=====')
-          output.puts TTY::Markdown.parse(improvement)
+          improvement = prompt.ask('What could be improved about this answer?')
+          prompt.say('=====Improvement=====')
+          output.puts improvement
           prompt.say("\n")
-        end
-      end
 
-      private
+          ask_question_again = prompt.yes?('Ask question again?')
+
+          redo_questions.push(question) if ask_question_again
+          redo_questions
+        end
+
+        question_run(do_over)
+      end
 
       def questions
         YAML.load(::File.read("#{Dir.getwd}/#{@path}"))
