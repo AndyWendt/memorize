@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'yaml'
 require 'tty-markdown'
-require "tty-prompt"
+require 'tty-prompt'
 require_relative '../command'
 
 module Memorize
@@ -17,19 +17,24 @@ module Memorize
         # output.puts questions
         questions.shuffle.each do |question|
           prompt.say("\n")
-          answer = prompt.multiline(question["question"]).join("\n")
+          answer = prompt.multiline(question['question']).join("\n")
           prompt.say("\n")
 
-          prompt.say("=====Question=====")
-          prompt.say(question["question"])
+          prompt.say('=====Question=====')
+          prompt.say(question['question'])
           prompt.say("\n")
 
-          prompt.say("=====Answer=====")
-          output.puts parsed = TTY::Markdown.parse(question["answer"])
+          prompt.say('=====Answer=====')
+          output.puts parsed = TTY::Markdown.parse(question['answer'])
           prompt.say("\n")
 
-          prompt.say("=====Your Answer=====")
+          prompt.say('=====Your Answer=====')
           output.puts TTY::Markdown.parse(answer)
+          prompt.say("\n")
+
+          prompt.ask('What could be improved about this answer?')
+          improvement = prompt.say('=====Improvement=====')
+          output.puts TTY::Markdown.parse(improvement)
           prompt.say("\n")
         end
       end
