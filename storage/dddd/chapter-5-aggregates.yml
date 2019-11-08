@@ -37,8 +37,12 @@
 
 - question: "What are the steps/rules to creating a right-sized aggregate?"
   tags: []
-  answer: >
-    1. start off by designing small, cohesive aggregates by creating one entity per aggregate and making it the root.
+  answer: |
+    1. Start off by creating one entity per aggregate and making it the root.
+    2. Determine the aggregates that will require reactionary updates due to an aggregate being updated
+    3. Determine how much time may elapse before the reaction updates, in two, happen.
+    4. Aggregates that must be updated together immediately likely should be in the same aggregate.
+    5. Reacting Aggregates that can be updated after N amount of time should follow the eventual consistency rule
 
 - question: "What are the rules of Aggregate design?"
   tags: []
