@@ -3,3 +3,8 @@
 - question: "When should you interface?"
   answer: "Foo bar"
   tags: [interfaces]
+
+
+- question: "Describe what an object is"
+  tags: [fizz, baz]
+  answer: "Fizz bazzy bizzy"
