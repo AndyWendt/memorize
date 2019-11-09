@@ -4,6 +4,7 @@ require 'tty-markdown'
 require 'tty-prompt'
 require 'tty-progressbar'
 require 'tty-table'
+require 'pastel'
 require_relative '../command'
 
 module Memorize
@@ -13,6 +14,7 @@ module Memorize
         @options = options
         @path = path
         @prompt = TTY::Prompt.new
+        @pastel = Pastel.new
       end
 
       def execute(input: $stdin, output: $stdout)
@@ -22,7 +24,7 @@ module Memorize
 
       private
 
-      attr_reader :prompt, :output, :bar
+      attr_reader :prompt, :output, :bar, :pastel
 
       def question_run(questions)
         return if questions.empty?
@@ -60,36 +62,25 @@ module Memorize
       end
 
       def ask_again?
-        prompt.yes?('Ask question again?')
+        formatted_question = format_question('Ask question again?')
+        prompt.yes?(formatted_question)
       end
 
       def ask_the_question(question)
         prompt.say("\n")
-        answer = prompt.multiline(question['question']).join("\n")
+        formatted_question = format_question(question['question'])
+        answer = prompt.multiline(formatted_question).join("\n")
         prompt.say("\n")
         answer
       end
 
-      def display_the_question(question)
-        prompt.say('=====Question=====')
-        prompt.say(question['question'])
-        prompt.say("\n")
-      end
-
-      def display_the_answer(question)
-        prompt.say('=====Answer=====')
-        output.puts parsed = TTY::Markdown.parse(question['answer'])
-        prompt.say("\n")
-      end
-
-      def display_their_answer(answer)
-        prompt.say('=====Your Answer=====')
-        output.puts TTY::Markdown.parse(answer)
-        prompt.say("\n")
-      end
-
       def ask_about_improvement
-        prompt.ask('What could be improved about this answer?')
+        formatted_question = format_question('What could be improved about this answer?')
+        prompt.ask(formatted_question)
+      end
+
+      def format_question(question)
+        pastel.green(question)
       end
 
       def render_table(question_hash, askee_answer, improvement = nil)
