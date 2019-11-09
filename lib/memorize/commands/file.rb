@@ -2,6 +2,7 @@
 require 'yaml'
 require 'tty-markdown'
 require 'tty-prompt'
+require 'tty-progressbar'
 require_relative '../command'
 
 module Memorize
@@ -20,14 +21,19 @@ module Memorize
 
       private
 
-      attr_reader :prompt, :output
+      attr_reader :prompt, :output, :bar
 
       def question_run(questions)
         return if questions.empty?
         number_of_questions = questions.length + 1
 
+        prompt.say("\n")
+        prompt.say("\n")
+        prompt.say("\n")
+        @bar = TTY::ProgressBar.new("Progress [:bar]", total: number_of_questions)
+
         do_over = questions.shuffle.each.with_index.reduce([]) do |redo_questions, (question, i)|
-          display_question_position(number_of_questions, i)
+          display_question_position(i)
           answer = ask_the_question(question)
           display_the_question(question)
           display_the_answer(question)
@@ -41,9 +47,10 @@ module Memorize
         question_run(do_over)
       end
 
-      def display_question_position(number_of_questions, position)
+      def display_question_position(position)
         prompt.say("\n")
-        prompt.say("Question #{position + 1} of #{number_of_questions}")
+        bar.advance(1)
+        prompt.say("\n")
       end
 
       def ask_again?
