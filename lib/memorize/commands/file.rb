@@ -25,15 +25,15 @@ module Memorize
 
       def question_run(questions)
         return if questions.empty?
-        number_of_questions = questions.length + 1
+        number_of_questions = questions.length
 
         prompt.say("\n")
         prompt.say("\n")
         prompt.say("\n")
-        @bar = TTY::ProgressBar.new("Progress [:bar] :percent", total: number_of_questions)
+        @bar = TTY::ProgressBar.new("Progress [:bar] :percent", head: '>', total: number_of_questions)
+        bar.render
 
-        do_over = questions.shuffle.each.with_index.reduce([]) do |redo_questions, (question, i)|
-          display_question_position(i)
+        do_over = questions.shuffle.reduce([]) do |redo_questions, question|
           answer = ask_the_question(question)
           display_the_question(question)
           display_the_answer(question)
@@ -41,6 +41,8 @@ module Memorize
           ask_about_improvement
 
           redo_questions.push(question) if ask_again?
+          display_question_position
+
           redo_questions
         end
 
@@ -48,9 +50,9 @@ module Memorize
         question_run(do_over)
       end
 
-      def display_question_position(position)
+      def display_question_position
         prompt.say("\n")
-        bar.advance(1)
+        bar.advance
         prompt.say("\n")
       end
 
