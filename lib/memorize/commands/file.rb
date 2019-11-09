@@ -83,6 +83,10 @@ module Memorize
         pastel.green(question)
       end
 
+      def format_row_heading(heading)
+        pastel.cyan(heading)
+      end
+
       def render_table(question_hash, askee_answer, improvement = nil)
         rows = [
           ['Question', TTY::Markdown.parse(question_hash['question'])],
@@ -91,6 +95,11 @@ module Memorize
         ]
 
         rows << ['Improvement', TTY::Markdown.parse(improvement)] unless improvement.nil?
+
+        rows.map do |row|
+          row[0] = format_row_heading(row[0])
+          row
+        end
 
         puts TTY::Table.new(rows).render(:ascii, multiline: true, padding: 1)
       end
