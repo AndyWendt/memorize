@@ -24,8 +24,10 @@ module Memorize
 
       def question_run(questions)
         return if questions.empty?
+        number_of_questions = questions.length + 1
 
-        do_over = questions.shuffle.reduce([]) do |redo_questions, question|
+        do_over = questions.shuffle.each.with_index.reduce([]) do |redo_questions, (question, i)|
+          display_question_position(number_of_questions, i)
           answer = ask_the_question(question)
           display_the_question(question)
           display_the_answer(question)
@@ -37,6 +39,11 @@ module Memorize
         end
 
         question_run(do_over)
+      end
+
+      def display_question_position(number_of_questions, position)
+        prompt.say("\n")
+        prompt.say("Question #{position + 1} of #{number_of_questions}")
       end
 
       def ask_again?
