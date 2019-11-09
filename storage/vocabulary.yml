@@ -1,9 +1,13 @@
 ---
 
-- question: "Describe deterministic"
+- question: "Deterministic"
   answer: "foo biz"
   tags: []
 
-- question: "Describe non-deterministic"
+- question: "Non-deterministic"
   answer: "foo baz"
+  tags: []
+
+- question: "Currying"
+  answer: "fizz baz"
   tags: []
