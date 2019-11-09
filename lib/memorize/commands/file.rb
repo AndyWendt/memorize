@@ -3,6 +3,7 @@ require 'yaml'
 require 'tty-markdown'
 require 'tty-prompt'
 require 'tty-progressbar'
+require 'tty-table'
 require_relative '../command'
 
 module Memorize
@@ -35,12 +36,14 @@ module Memorize
 
         do_over = questions.shuffle.reduce([]) do |redo_questions, question|
           answer = ask_the_question(question)
-          display_the_question(question)
-          display_the_answer(question)
-          display_their_answer(answer)
-          ask_about_improvement
+          system("clear")
+          render_table(question, answer)
+          improvement = ask_about_improvement
+          system("clear")
+          render_table(question, answer, improvement)
 
           redo_questions.push(question) if ask_again?
+          system("clear")
           display_question_position
 
           redo_questions
@@ -86,10 +89,19 @@ module Memorize
       end
 
       def ask_about_improvement
-        improvement = prompt.ask('What could be improved about this answer?')
-        prompt.say('=====Improvement=====')
-        output.puts improvement
-        prompt.say("\n")
+        prompt.ask('What could be improved about this answer?')
+      end
+
+      def render_table(question_hash, askee_answer, improvement = nil)
+        rows = [
+          ['Question', TTY::Markdown.parse(question_hash['question'])],
+          ['Answer', TTY::Markdown.parse(question_hash['answer'])],
+          ['Your Answer', TTY::Markdown.parse(askee_answer)],
+        ]
+
+        rows << ['Improvement', TTY::Markdown.parse(improvement)] unless improvement.nil?
+
+        puts TTY::Table.new(rows).render(:ascii)
       end
 
       def questions
