@@ -101,7 +101,7 @@ module Memorize
 
         rows << ['Improvement', TTY::Markdown.parse(improvement)] unless improvement.nil?
 
-        puts TTY::Table.new(rows).render(:ascii)
+        puts TTY::Table.new(rows).render(:ascii, multiline: true, padding: 1)
       end
 
       def questions
