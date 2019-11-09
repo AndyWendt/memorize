@@ -1,1 +1,9 @@
+---
 
+- question: "Describe deterministic"
+  answer: "foo biz"
+  tags: []
+
+- question: "Describe non-deterministic"
+  answer: "foo baz"
+  tags: []
