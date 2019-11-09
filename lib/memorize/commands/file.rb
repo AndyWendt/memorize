@@ -33,7 +33,7 @@ module Memorize
         prompt.say("\n")
         prompt.say("\n")
         prompt.say("\n")
-        @bar = TTY::ProgressBar.new("Progress [:bar] :percent", head: '>', total: number_of_questions)
+        @bar = TTY::ProgressBar.new(pastel.yellow("Progress [:bar] :percent"), head: '>', total: number_of_questions)
         bar.render
 
         do_over = questions.shuffle.reduce([]) do |redo_questions, question|
