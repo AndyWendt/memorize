@@ -2,9 +2,9 @@
 
 - question: "What are entities?"
   tags: [tactical]
-  answer: >
-    Entities are often mutable (though not of necessity) objects that are unique even when their values
-    correalate to objects of the same type (in contrast to a value object).
+  answer: |
+    Entities are often mutable (though not of necessity) objects that are unique
+    even when their values correalate to objects of the same type (in contrast to a value object).
 
 - question: "What are the dangers of over-abstracting?"
   tags: []
