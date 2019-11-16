@@ -4,7 +4,15 @@
   answer: "Foo bar"
   tags: [interfaces]
 
-
 - question: "Describe what an object is"
   tags: [fizz, baz]
   answer: "Fizz bazzy bizzy"
+
+- question: "Where should business rule objects live? "
+  tags: []
+  answer: "Where should business rule objects live?"
+
+
+- question: "Should objects be modeled based off of data or behavior? "
+  tags: []
+  answer: "Behavior"
