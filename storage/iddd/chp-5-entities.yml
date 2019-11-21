@@ -15,4 +15,49 @@
     So that the behavior associated with that identity can be centralized instead of spread out and leaking.
   tags: []
 
+- question: "What are reasonable ways to get users to define unique and correct identities?"
+  answer: |
+    Use design discussions to devise workflows to safely define human-readable unique identities
+  tags: []
+
+- question: "What is an ideal example of an application generated identity?"
+  answer: "UUID"
+  tags: []
+
+- question: |
+    When identities are passed between Bounded Contexts, what is a good strategy to encapsulate
+    the information?
+  answer: |
+    A Value Object since it allows for retrieval of the ID as well as meta information such as creation date.
+  tags: []
+
+- question: "What is a good object to use for generating Aggregate Root identities?"
+  answer: "The Repository for the Aggregate root identity"
+  tags: []
+
+- question: "What is one way to reduce the performance burden of DB generated IDs?"
+  answer: Use a Repository to cache sequence/increment values
+  tags: []
+
+- question: "Describe the types of database identity generation and assignment"
+  answer: |
+    * Early happens before Entity persistence
+    * Late happens after Entity persistence
+  tags: []
+
+- question: "What Pattern would be useful to support both types of Identity generation?"
+  answer: "Repository"
+  tags: []
+
+- question: "How is an Entities' ID selected when it resides in another Bounded Context?"
+  answer: "A fuzzy search combined with user selection from that search"
+  tags: []
+
+- question: "How could updates be handled when another Bounded Context assigns identity?"
+  answer: "Event-driven architecture with Domain Events"
+  tags: []
+
+- question: "How do you handle concept differences between autonomous Contexts?"
+  answer: "Use Context maps to translate"
+  tags: []
 
