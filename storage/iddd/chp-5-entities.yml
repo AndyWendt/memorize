@@ -61,3 +61,38 @@
   answer: "Use Context maps to translate"
   tags: []
 
+- question: "What are the potential issues of Late ID Generation?"
+  answer: |
+    * A Domain Event may be recieved before persistence
+    * Repository collection additions may not work since there isn't a unique ID yet to add
+  tags: []
+
+- question: "How do you support the domain and or model needing separate IDs?"
+  answer: "Use a surrogate ID.  Hide it using a Layer Supertype"
+  tags: []
+
+- question: "What is an acceptable form for a Ubiquitous language to take in its early stages?"
+  answer: "Using a glossary with scenarios.  The language is ultimately modelled by the code."
+  tags: []
+
+- question: "What is one approach to segregate identities to protect data privacy?"
+  answer: "Query striping where you require the root entities ID on all queries"
+  tags: []
+
+- question: "What kind of object would you put a password encrypter in?"
+  answer: "A Domain Service (i.e. EncryptionService)"
+  tags: []
+
+- question: |
+    Describe the pattern that requires code to be written in a manner that makes the terminology coincide
+    with the action (methods)?
+  answer: An Intention Revealing Interface requires the action (method) to coincide with the language.
+  tags: []
+
+- question: "What is a good strategy to protect sensitive information? An Example?"
+  answer: |
+    Interating with sensitive infomration only through a Domain Service and
+    ensuring that the sensitive information does not leave the Aggregate boundary.
+    Passwords is an example.
+  tags: []
+
