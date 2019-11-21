@@ -1,0 +1,18 @@
+---
+
+- question: "When should you make an object an entity?"
+  answer: "Any time that an object needs have a unique identity"
+  tags: []
+
+- question: "What should you focus on when first designing an entity?"
+  answer: |
+    The attributes and properties that uniquely define its behavior and identity.
+    Strip away the behavior and the excess properties that are not essential to the concept.
+  tags: []
+
+- question: "Why use Entities instead of Value Objects to store unique identity?"
+  answer: |
+    So that the behavior associated with that identity can be centralized instead of spread out and leaking.
+  tags: []
+
+
