@@ -7,3 +7,17 @@
       the values are added to the hash.
     * Using `Hash#fetch()` raises a `key not found error`  Raises the error right where the information is supplied.
   tags: []
+
+- question: "What is the search sequence when attempting to find a symbol in Ruby?"
+  answer: |
+    1. Each entry in `Module.nesting`
+    2. Each entry in `Module.nesting.first.ancestors`
+    3. Each entry in `Object.ancestors` if `Module.nesting.first` is `nil` or a module.
+  tags: []
+
+- question: "Explain Ruby Contant Lookup"
+  answer: |
+    Loosely speaking, the search first works upwards through the nesting at the point of reference,
+    then upwards through either the inheritance chain of the containing class (if there is one), or
+    that of `Object` otherwise.
+  tags: []
