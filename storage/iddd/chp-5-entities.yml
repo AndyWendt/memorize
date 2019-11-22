@@ -96,3 +96,68 @@
     Passwords is an example.
   tags: []
 
+- question: "What is object Schizophrenia?"
+  answer: |
+    An object with multiple roles and responsibilities where the objects delegated to don't know
+    the identity of their originating object.
+  tags: []
+
+- question: "When is delegation a good design choice?"
+  answer: "Only when it simplifies more than it complicates (Gamma et al)"
+  tags: []
+
+- question: "How do you ensure clean responsibilities of an object?"
+  answer: |
+    Use role-based interfaces.  Design the interface to only expose what we want clients to use.
+  tags: []
+
+- question: "What is the minimum an Entity constructor must include?"
+  answer: "Enough state to fully identify it and allow clients to find it."
+  tags: []
+
+- question: "What is an Entity Invariant?"
+  answer: |
+    A state that must stay transactionally consistent throughout the Entity life cycle.
+    They are a concern of Aggregates.
+  tags: []
+
+- question: "What is one method to assert individual properties/attributes?"
+  answer: |
+    Self-encapsulation (Fowler) where individual properties/attributes conform to the contract of the object and
+    are in interacted with through accessors, internally and externally.
+    These are guards in the form of precondition validations.
+  tags: []
+
+- question: "What benefit does design by contract provide?"
+  answer: "It enables you to specify preconditions, post conditions, and invariants of components"
+  tags: []
+
+- question: "What are good patterns to use to validate an Entity"
+  answer: "Specification or Strategy patterns and or the Deferred Validation concept"
+  tags: []
+
+- question: "Why should you typically not embed validation logic inside of an Entity?"
+  answer: |
+    * The Validation logic often changes more often than the object itself
+    * The Entity would assume too many responsibilities
+  tags: []
+
+- question: "What should a validator class do when it encounters an error?"
+  answer: |
+    Add the error to a collection and then continue to process the potential errors
+    so that all may be found.
+  tags: []
+
+- question: "What is a good strategy to validate groups of Entities or Aggregates?"
+  answer: |
+    Use a Domain Service with the Deferred Validation pattern along
+    with a repository to read the aggregate instances to validate.
+  tags: []
+
+- question: "What is the most useful way to track changes to an Entity?"
+  answer: |
+    Domain Events coupled with an Event Store.  Event Sourcing pattern is useful
+    for the technical teams to track changes.
+  tags: []
+
+
