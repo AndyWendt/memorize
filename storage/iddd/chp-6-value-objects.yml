@@ -1,0 +1,22 @@
+---
+
+- question: "What are examples of Value Objects?"
+  answer: |
+    * Numbers
+    * strings
+    * dates
+    * times
+    * full names
+    * currency
+    * colors
+    * phone numbers
+    * postal addresses
+  tags: []
+
+
+- question: "Why should you strive to model using Value Objects instead of Entities?"
+  answer: |
+    * When modeled as an Entity, the design should be biased toward
+      serving as a Value container rather than a child Entity container
+    * Value types are easier to create, test, use, optimize, and maintain.
+  tags: []
