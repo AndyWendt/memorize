@@ -3,12 +3,15 @@
 - question: "What are the steps to Rails autoloading?"
   answer: |
     1. Uses the built-in Ruby lookup rules to attempt to find the constant
-    2. Rails overrides `#const_missing` and uses its file lookup convention
+    2. Rails overrides `#const_missing` and uses its file lookup rules
   tags: []
 
 - question: "What are the Rails File Lookup Rules?"
   answer: |
-
+    1. Rails creates an inferred file name based on the constant name and any associated modules
+    2. Rails looks for the inferred filename recursively in the paths defined in
+      `autoload_paths`
+    3. By default, `app/` is searched
   tags: []
 
 
@@ -16,4 +19,34 @@
   answer: "Ruby autoloading requires the location of each constant to be defined in advance"
   tags: []
 
+- question: |
+    Given `const_missing` passes no nesting information,
+    how does Rails handle nested lookup?
+  answer: |
+    It assumes the maximum nesting level for a costant reference
 
+    ```
+    module Foo
+      module Bar
+        Baz # Module.nesting => [Foo::Bar, Foo]
+      end
+    end
+    ```
+
+    is the same as
+
+    ```
+    Foo::Bar::Baz # Module.nesting => []
+
+    module Foo::Bar
+      Baz # Module.nesting => [Foo::Bar]
+    end
+    ```
+  tags: []
+
+- question: "What are the load attempts for `Foo::Bar::Baz`"
+  answer: |
+    1. `Foo::Bar::Baz`
+    2. `Foo::Baz`
+    3. `Baz`
+  tags: []
