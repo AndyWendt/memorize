@@ -1,3 +1,19 @@
 ---
 
+- question: "What are the steps to Rails autoloading?"
+  answer: |
+    1. Uses the built-in Ruby lookup rules to attempt to find the constant
+    2. Rails overrides `#const_missing` and uses its file lookup convention
+  tags: []
+
+- question: "What are the Rails File Lookup Rules?"
+  answer: |
+
+  tags: []
+
+
+- question: "How is Ruby autoloading different than Rails autoloading?"
+  answer: "Ruby autoloading requires the location of each constant to be defined in advance"
+  tags: []
+
 
