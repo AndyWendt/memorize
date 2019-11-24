@@ -1,0 +1,9 @@
+---
+
+- question: "What is a null statement in C?"
+  answer: "A blank line ended with a `;`"
+  tags: []
+
+- question: "What is unique about C's for loop bodies?"
+  answer: "They must have a body"
+  tags: []
