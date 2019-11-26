@@ -11,3 +11,9 @@
 - question: "Currying"
   answer: "fizz baz"
   tags: []
+
+
+- question: "What is a race condition?"
+  answer: ""
+  tags: []
+
