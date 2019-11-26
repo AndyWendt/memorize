@@ -1,1 +1,11 @@
 ---
+
+- question: "What is an effective method to delegate responsibilities from a god object to another object?"
+  answer: |
+    Pass through the responsibilities to another object by injecting the
+    current object into a new one if it needs to be used by the new one.
+  tags: []
+
+- question: "What is a good method to start slimming down a god object?"
+  answer: "Use traits to pull out collections of behavior"
+  tags: []
