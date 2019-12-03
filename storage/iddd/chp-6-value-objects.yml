@@ -20,3 +20,42 @@
       serving as a Value container rather than a child Entity container
     * Value types are easier to create, test, use, optimize, and maintain.
   tags: []
+
+- question: What is the problem with using basic types when representing a value?
+  answer: |
+    You short change your model by not allowing Side-Effect Free Functions to be added by
+    the basic type.
+  tags: []
+
+- question: Why are the problems with patching a basic type to create a value object?
+  answer: |
+    Patching a basic type doesn't allow you to gain deep domain insight.
+  tags: []
+
+- question: |
+    When taking in an Entity for a Value Object, what is a proper way to
+    modify the Entity while maintaining immutability?
+  answer: |
+    Have the Value Object answer a result so that the Entity can
+    modify itself on its own terms.
+  tags: []
+
+- question: What should a Value Object understand?
+  answer: Whenever possible, only its own internal shape and attributes and type
+  tags: []
+
+- question: |
+    If additional attributes weaken the cohesiveness of an Entity, what should
+    be done to improve the design?
+  answer: Create value types to be used by the Entity
+  tags: []
+
+- question: If a Value Object referenced by an Entity becomes invalid, what should be done?
+  answer: It should be replaced with a correct value/object (whole value replacement)
+  tags: []
+
+- question: How d you compare two Value Object instances?
+  answer: Compare the equality of their attributes using an `equals()` method
+  tags: []
+
+
