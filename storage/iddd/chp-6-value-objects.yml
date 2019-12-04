@@ -59,3 +59,25 @@
   tags: []
 
 
+- question: |
+    How do you compare two Value Object instances?
+  answer: Compare the equality of their attributes using an equals method
+  tags: []
+
+- question: What is a Side-Effect Free Function?
+  answer: |
+    An operation of an object that produces output but without modifying its own state.
+    They are Query methods in Bertrand Meyer's Command-Query Seperation (CQS) principle.
+  tags: []
+
+- question: What describes a Value Object?
+  answer: Cohesive Attributes
+  tags: []
+
+- question: How do you ensure that a Value Object is immutable?
+  answer: Only allow values to be set through the constructor
+  tags: []
+
+- question: Where should logic pertaining to a value be located?
+  answer: In a Value Object (likely in the constructor or in individual functions thereof)
+  tags: []
