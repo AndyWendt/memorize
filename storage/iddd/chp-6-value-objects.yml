@@ -166,16 +166,3 @@
     - As an Entity only in the data model (use a Layer Supertype to assist)
     - Collection backed by a join table
   tags: []
-
-- question: |
-    How do you protect against invariants so that an Entity is not peristed
-    which is older than the one currenly peristed?
-  answer: Use a version number and reject updates that are older
-  tags: []
-
-- question: What are issues with large-cluster Aggregates?
-  answer: |
-    - False invariants/constraints imposed by the developers
-    - Transactional issues
-    - Performance and scalability issues
-  tags: []
