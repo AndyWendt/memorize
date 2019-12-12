@@ -81,3 +81,88 @@
 - question: Where should logic pertaining to a value be located?
   answer: In a Value Object (likely in the constructor or in individual functions thereof)
   tags: []
+
+- question: |
+    When objects from an upstream context flow into a downstream context, how do you
+    model concepts in the downstream (consuming) context to minimize responsibility
+    for properties in the downstream model?
+  answer: |
+    Use immutable value objects whenever possible so that synchronization need not
+    be maintained.
+  tags: []
+
+- question: What are the representations of thing, description, and descriptive types of things?
+  answer: Entity, value, standard types/power types
+  tags: []
+
+- question: How is a Standard Type implemented?
+  answer: |
+    They can be thought of as Entities but often they are a simple class passed into a
+    Value Object, or a Value Object itself, (Java enum factories) that tells the VO what type it is.
+  tags: []
+
+- question: What is an example of a Standard Type?
+  answer: A phone number with a type such as Home, Mobile, Work, or Other
+  tags: []
+
+- question: Where do Standard Types typically reside?
+  answer: In a separate context from the models that consume them
+  tags: []
+
+- question: |
+    What GoF object is represented by a Standard Type implemented
+    using an Enum with default methods
+  answer: |
+    State since default methods are implementedfor the Standard Type and
+    overriden for the specific type.
+  tags: []
+
+- question: How should tests be written from a DDD perspective?
+  answer: Tests should be written so that they have meaning to domain experts
+  tags: []
+
+- question: What is another term for modelling a Value Object as a Strategy?
+  answer: A Policy
+  tags: []
+
+- question: What two constructors are good to support for Value Objects?
+  answer: Primary which uses private setters, and a copy constructor
+  tags: []
+
+- question: Is it permissible to combine patterns (such as Strategy/Policy) with a Value Object?
+  answer: Yes
+  tags: []
+
+- question: Should accessors be limited to getting and setting?
+  answer: No, it can also perform assertions as guards
+  tags: []
+
+- question: What is an easier method for Aggregate persistence?
+  answer: NoSQL over ORMs since they persist aggregates quite well
+  tags: []
+
+- question: What are signs of undue data model (vs domain model) influence on Value Objects?
+  answer: |
+    Are you considering an Entity only because the data model must store it as an Entity?
+  tags: []
+
+- question: "Describe: 'Data Model should be subordinate'"
+  answer: |
+    Design your data model for the sake of your domain model,
+    not your domain model for the sake of your data model.
+  tags: []
+
+- question: |
+    What is one method to persist a singular Value Object
+    without making it an Entity while dealing with the
+    impedance mismatch?
+  answer: Denormalize them into the parent Entities' table row
+  tags: []
+
+
+- question: What are ways to persist Value Object collections??
+  answer:
+    - Textual representation
+    - As an Entity only in the data model (use a Layer Supertype to assist)
+    - Collection backed by a join table
+  tags: []
