@@ -12,3 +12,56 @@
     - Transactional issues
     - Performance and scalability issues
   tags: []
+
+- question: How do you discover which objects should be in an Aggregate?
+  answer: By determining what a model's true invariants are?
+  tags: []
+
+- question: What is an invariant?
+  answer: |
+    It is a business rule that must be transactionally consistent
+    (as opposed to eventually consisten) i.e. atomic and immediate
+  tags: []
+
+- question: What does an aggregate double as?
+  answer: A transactional consistency boundary
+  tags: []
+
+- question: Why is transactional analysis useful when designing aggregates
+  answer: Because you cannot correctly reason about aggregate design without it
+  tags: []
+
+- question: What is the definition of a properly designed aggregate?
+  answer: |
+    One that can be modified in any way required by the business while
+    maintaining single transaction invariant consistency
+  tags: []
+
+- question: Describe examples of large cluster aggregates
+  answer: answers will vary
+  tags: []
+
+- question: How do object graphs play into aggregates?
+  answer: |
+    Aggregates are chiefly about consistency boundaries so object graphs
+    are not their primary concern.
+  tags: []
+
+- question: Describe a small aggregate
+  answer: |
+    Limit the aggregate to only necessary entities, attributes, and values.
+    A starting minimum is a root entity, minimum number of attributes,
+    and or value type properties.
+  tags: []
+
+- question: What are necessary elements of an Aggregate?
+  answer: |
+    Those that must be consistent with the others even if domain experts
+    don't specify them as such.
+  tags: []
+
+- question: What are questions to ask about the persistence of multiple aggregates?
+  answer: |
+    If the persistence of multiple aggregates is confined to one transaction, be skeptical
+  tags: []
+
