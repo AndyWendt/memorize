@@ -65,3 +65,28 @@
     If the persistence of multiple aggregates is confined to one transaction, be skeptical
   tags: []
 
+- question: If you're trying to keep multiple aggregates consistent what might that indicate?
+  answer: An invariant was missed
+  tags: []
+
+- question: |
+    If limiting a model to referencing aggregates only by ID causes performance issues,
+    what are potential resolutions?
+  answer: Theta joins, CQRS, strike a balance between inferred and direct object reference
+  tags: []
+
+- question: |
+    What is one pattern to implement eventual consistency
+    between the origin aggregate and others?
+  answer: Domain Events (pub sub/Observer)
+  tags: []
+
+- question: What is a good strategy to retry failed Domain Events?
+  answer: |
+    Capped Exponential Backoff where you exponentially backoff on
+    retries while capping waits with an upper limit.
+  tags: []
+
+- question: How would you break up large aggregate clusters?  Examples?
+  answer: answer will vary
+  tags: []
