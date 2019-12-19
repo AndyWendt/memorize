@@ -9,3 +9,8 @@
 - question: "What is a good method to start slimming down a god object?"
   answer: "Use traits to pull out collections of behavior"
   tags: []
+
+- question: What are a good tactics to reduce refactoring defects when changing variables?
+  answer: Use methods and composite local variables to replace variables and instead of doing the full extraction
+  tags: []
+

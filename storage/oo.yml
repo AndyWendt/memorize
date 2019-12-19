@@ -20,3 +20,7 @@
 - question: "When you see a repeated concept, such as `couponCode`, what does that indicate?"
   answer: "You have another abstraction (i.e. Coupon)"
   tags: []
+
+- question: What is a good pattern to remove uncertainty in code and state intent better?
+  answer: The Null Object or Special Case Pattern
+  tags: []
