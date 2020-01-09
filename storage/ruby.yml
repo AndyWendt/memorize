@@ -21,3 +21,23 @@
     then upwards through either the inheritance chain of the containing class (if there is one), or
     that of `Object` otherwise.
   tags: []
+
+- question: "Explain when and why you should use the symbolic or english-style boolean operators"
+  answer: |
+    The english-style variants have a much lower operator precedence and thus the results are often unexpected.
+    In addition, the english-style variants have equal precedence and are thus evaluated left to right.
+
+    For instance:
+       user = Struct.new(:name).new("avdi")
+       user_name = user && user.name
+       user_name # 'avdi'
+       user_name = user and user.name
+       user_name # <struct name="avdi">
+
+    In the above example, it is assigning `user` to `user_name` first and then attempting to retrieve the name
+    property.
+
+    Ruby inherits the english-style operators from Perl where their purpose is to control flow. As in,
+    do something _or_ die.  Thus it means, only execute the code on the right if the code on the left is falsey.
+    Or with an `and`, only execute the code on the right if the code on the left is truthy.
+  tags: []
