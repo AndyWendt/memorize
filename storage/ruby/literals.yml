@@ -26,3 +26,12 @@
     100000 could be represented as 100_000. Same for larger numbers.
     `100000 == 100_000 # true`
   tags: ['002-large-integer-literals']
+
+- question: What is a character literal and when would you use it?
+  answer: |
+    Ruby does not have a character type distinct from the string type.  It does have a character literal syntax.
+    To create one precede the character with a question mark "?".
+    It is good for whenever you need to create a one character long string and enforce it.
+    E.g. `when ?y`.
+  tags: []
+
