@@ -1,0 +1,28 @@
+---
+
+- question: How is a binary literal used in Ruby? And an example?
+  answer: |
+    A binary literal, can be used to represent file permissions.
+
+    Instead of:
+
+    ```
+    chmod 0755, 'somefile'
+    ```
+
+    You could use:
+
+    ```
+    # U  G  O
+    # rwxrwxrwx
+    perms = 0b111101101
+    perms.to_s(8) # => "755"
+    ```
+  tags: ['001-binary-literals']
+
+
+- question: How do large integer literals work? An Example?
+  answer: |
+    100000 could be represented as 100_000. Same for larger numbers.
+    `100000 == 100_000 # true`
+  tags: ['002-large-integer-literals']
