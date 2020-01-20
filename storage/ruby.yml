@@ -2,10 +2,10 @@
 
 - question: "When code depends on a hash value being present, nested or not, how should you retrieve the value and WHY?"
   answer: |
-    * A regular hash call without a key present returns `nil`.  A chained call will return
-      `NoMethodError (undefined method `[]' for nil:NilClass)`.  Unfortunately, it fails far away from where
+    A regular hash call without a key present returns `nil`.  A chained call will return
+      `NoMethodError (undefined method [] for nil:NilClass)`.  Unfortunately, it fails far away from where
       the values are added to the hash.
-    * Using `Hash#fetch()` raises a `key not found error`  Raises the error right where the information is supplied.
+    Using `Hash#fetch()` raises a `key not found error`  Raises the error right where the information is supplied.
   tags: []
 
 - question: "What is the search sequence when attempting to find a symbol in Ruby?"
