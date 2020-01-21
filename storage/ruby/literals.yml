@@ -35,3 +35,11 @@
     E.g. `when ?y`.
   tags: []
 
+- question: Describe barewords and when/how to use them
+  answer: |
+    Use barewords to create methods since the values can come from almost anywhere
+    without changing the implementation.  The implementation shouldn't care where
+    the values come from.  Barewords are essentially method calls without curly's
+    or attr_readers or includes.
+  tags: ["004-bareword"]
+
