@@ -1,0 +1,28 @@
+---
+
+- question: Which method of invoking a system command is preferred?
+  answer: |
+    Passing a string: `system("ls -la")` can open up a system to injection attacks
+    and the command must be passed to system's shell.
+
+    Passing an array: `system("ls", "-la")` is preferred since it passes it off directly
+    to the system for execution and it helps to protect against injection attacks.
+  tags: ["005-array-literals"]
+
+- question: What is the Forwardable standard library good for?
+  answer: |
+    It's excellent when using composition to create objects. I.e. forwarding method calls
+    to another object.
+
+    ```
+    extend Forwardable
+    # delegate to @account
+    def_delegators :@account, :foo, :bar
+    #or
+    def_delegators '@user.account', :foo, :bar
+    ```
+
+    While forwardable isn't as featureful as ActiveSupport::delegate, it's available in
+    any Ruby installation.
+  tags: []
+
