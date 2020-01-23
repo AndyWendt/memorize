@@ -1,0 +1,117 @@
+---
+
+- question: Describe how to define your own constructor and why it is valuable?
+  answer: |
+    Defining your own constructor is helpful since you might have multiple ways/reasons
+    for instantiating a class.  For instance, Point might have an initializer for point
+    and cartesian coordinates.
+
+    `new` and `initialize` are just ordinary methods.
+
+    Steps to creating your own constructor:
+      1. Allocate a new, empty object
+      2. Run specialized initialization
+      3. Return the initialized instance
+
+    What this could look like for setting instance variables x,y:
+
+    ```ruby
+    class Point
+      def self.my_new(x,y)
+        instance = allocate
+        instance.instance_variable_set(:@x, x)
+        instance.instance_variable_set(:@x, y)
+        instance
+      end
+    end
+    ```
+
+    However,
+
+    ```ruby
+    class Point
+      def self.my_new(*args, &block)
+        instance = allocate
+        instance.my_initialize(*args, &block)
+        instance
+      end
+
+      def my_initialize(x,y)
+        @x = x
+        @y = y
+      end
+    end
+    ```
+  tags: ["007-constructors"]
+
+
+- question: How do you ensure that a class cannot be instantiated through the usual way?
+  answer: |
+    Make the `new` method private
+
+    ```ruby
+    class Snowflake
+      class << self
+        private :new
+      end
+
+      def self.instance
+        @instance ||= new
+      end
+    end
+
+    Snowflake.instance # => #<Snowflake:0x00000004af4db8>
+    Snowflake.instance # => #<Snowflake:0x00000004af4db8>
+
+    Snowflake.new
+    ```
+
+    You could also write the above using Ruby's `Singleton` library:
+
+    ```ruby
+    require 'singleton'
+    class TheOne
+      include Singleton
+    end
+
+    TheOne.instance # => #<TheOne:0x00000004a0b190>
+    TheOne.instance # => #<TheOne:0x00000004a0b190>
+    TheOne.new
+    ```
+  tags: ["007-constructors"]
+
+- question: What is `object.tap`'s purpose and usage?
+  answer: |
+    It's used to modify the current object and return the result as the current object and NOT the assigned value
+
+    For example:
+
+    ```
+    def fizz_factory_1
+      fizz_object = Struct.new(:fizz).new
+      fizz_object.fizz = 'foo'
+      fizz_object
+    end
+
+    def fizz_factory_2
+      Struct.new(:fizz).new.tap { |obj|  obj.fizz = 'foo' }
+    end
+
+    fizz_factory_1.fizz == fizz_factory_2.fizz # true
+    ```
+  tags: []
+
+
+- question: "What is the search sequence when attempting to find a symbol in Ruby?"
+  answer: |
+    1. Each entry in `Module.nesting`
+    2. Each entry in `Module.nesting.first.ancestors`
+    3. Each entry in `Object.ancestors` if `Module.nesting.first` is `nil` or a module.
+  tags: []
+
+- question: "Explain Ruby Constant Lookup"
+  answer: |
+    Loosely speaking, the search first works upwards through the nesting at the point of reference,
+    then upwards through either the inheritance chain of the containing class (if there is one), or
+    that of `Object` otherwise.
+  tags: []
