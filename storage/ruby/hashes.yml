@@ -6,6 +6,9 @@
       `NoMethodError (undefined method [] for nil:NilClass)`.  Unfortunately, it fails far away from where
       the values are added to the hash.
     Using `Hash#fetch()` raises a `key not found error`  Raises the error right where the information is supplied.
-  tags: []
 
+    You can also chain `fetch()` calls though it will raise a  `key not found` error.  But at least the error is raised
+    in the location where it is needed.
 
+    When code depends on a hash value being present, use `fetch()` instead of the subscript operator.
+  tags: ["008-fetch-as-an-assertion"]
