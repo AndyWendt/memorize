@@ -43,3 +43,9 @@
     * "What else might be possible?"
   tags: []
 
+- question: What are good questions to see how a week went for a developer?
+  answer: |
+    * How is pairing going?
+      * What is/is not going well?
+  tags: []
+
