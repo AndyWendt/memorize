@@ -1,0 +1,32 @@
+---
+
+- question: What are the three ways to create a symbol?
+  answer: |
+    Anything that can go into a string.
+
+    To get things such as a dash `-` into a symbol, use a string and then call `to_sym`.
+    `"foo-bar (baz)".to_sym`
+
+    A more concise and idiomatic way to do this is to use a quoted string symbol:
+
+    `:"foo-bar (baz)."`
+
+    You can use interpolation this way as well
+
+    There's also a percent-quote literal syntax.  `%s` followed by any delimeter you want.
+
+    `%s{foo:bar}`
+  tags: []
+
+- question: What are symbols best used for?
+  answer: |
+    They are best used for constrained vocabularlies
+    such as the names of options that could be passed to a method.
+  tags: []
+
+- question: Describe how the Ruby VM handles symbols
+  answer: |
+    The Ruby VM keeps a table in-memory of all known symbols and assigns a unique
+    integer to each. Generating an unbounded set of symbols from user input can
+    lead to memory leaks.
+  tags: []
