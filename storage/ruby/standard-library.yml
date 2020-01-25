@@ -1,0 +1,12 @@
+---
+
+- question: How do you find the home directory in Ruby?  Explain
+  answer: |
+    `Dir.home` can be used. It depends on `$HOME` being set if you don't
+    pass it an explicit user name: `Dir.home("avdi")`
+
+    A more reliable way is to use the `etc` standard library.
+
+    `Dir.home(Etc.getlogin)`
+  tags: []
+
