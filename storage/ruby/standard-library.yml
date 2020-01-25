@@ -7,6 +7,6 @@
 
     A more reliable way is to use the `etc` standard library.
 
-    `Dir.home(Etc.getlogin)`
+    `Dir.home(Etc.getlogin)`  however, this only works on Linux.
   tags: []
 
