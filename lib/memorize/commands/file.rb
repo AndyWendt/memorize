@@ -5,6 +5,7 @@ require 'tty-prompt'
 require 'tty-progressbar'
 require 'tty-table'
 require 'pastel'
+require 'pry'
 require_relative '../command'
 
 module Memorize
@@ -105,7 +106,17 @@ module Memorize
       end
 
       def questions
-        YAML.load(::File.read("#{Dir.getwd}/#{@path}"))
+        filename = "#{Dir.getwd}/#{@path}"
+        yamls = []
+        if ::File.directory?(filename)
+          Dir["#{filename}/*.yml"].each do |file|
+            yamls.concat(YAML.load(::File.read(file)))
+          end
+        else
+          yamls = YAML.load(::File.read(filename))
+        end
+
+        yamls
       end
     end
   end
