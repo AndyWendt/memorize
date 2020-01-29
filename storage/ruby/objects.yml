@@ -115,3 +115,20 @@
     then upwards through either the inheritance chain of the containing class (if there is one), or
     that of `Object` otherwise.
   tags: []
+
+- question: Are functions first class citizens in ruby?
+  answer: |
+    No, they're not. You cannot assign a function to a variable and
+    immediately use it. However, you can retrieve a method from an
+    object to use it.
+  tags: []
+
+- question: What does `my_instance.my_method` represent?
+  answer: |
+    Sending the `my_method` message to the `my_instance` object
+
+    * A message is a name for a responsibility an object may have.
+    * A method is a named, concrete piece of code that encodes one way
+      a responsibility may be fulfilled.  A method by which a message might
+      be implemented.
+  tags: []
