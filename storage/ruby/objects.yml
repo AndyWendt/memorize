@@ -132,3 +132,29 @@
       a responsibility may be fulfilled.  A method by which a message might
       be implemented.
   tags: []
+
+- question: What is the preferred way to create singleton objects in ruby?
+  answer: |
+    Using a singleton instance of object is a bit more inention revealing than using a module since
+    modules are typically used as namespaces and as means of sharing behavior.
+
+    ```
+    class << (LIVE_CELL = Object.new)
+      def to_s() 'o' end
+
+      def next_generation(x, y, board)
+        case board.neighbors(x,y).count(LIVE_CELL)
+        when 2..3 then self
+        else DEAD_CELL
+        end
+      end
+    end
+    ```
+  tags: []
+
+- question: How do singleton objects differ from the singleton pattern?
+  answer: |
+    The singleton pattern tends to manage quite a bit of centralized state whereas
+    singleton objects are stateless. They are thus somewhat less prone to abuse.
+  tags: ['013-singleton-objects']
+
