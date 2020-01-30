@@ -12,3 +12,33 @@
 
     When code depends on a hash value being present, use `fetch()` instead of the subscript operator.
   tags: ["008-fetch-as-an-assertion"]
+
+- question: How do you provide a default value for a hash key?
+  answer: |
+    Use `Hash#fetch()` by providing it a block: `Hash.fetch(:my_key) { 'my default value' }`
+  tags: []
+
+- question: How do you raise a custom exception if a hash key is not present?
+  answer: |
+    Use `Hash#fetch()` by providing it a block: `Hash.fetch(:my_key) { raise Error.new }`
+  tags: []
+
+- question: Why should you not use `||` to attempt to retrieve hash values with a default?
+  answer: |
+    Don't use `||` to provide a default value when attempting to retrieve a hash key. If the key
+    exists and it is falsey then it will return the right side.
+
+    ```
+    {}[:foo] || :default             # => :default
+    {foo: nil}[:foo] || :default     # => :default
+    {foo: false}[:foo] || :default   # => :default
+    ```
+
+    `Hash.fetch()` only resorts to the default when the given key is missing so it is a much better
+    way to retrieve values.
+
+    ```
+    options = {logger: false}
+    logger = options.fetch(:logger){Logger.new($stdout)}
+    ```
+  tags: []
