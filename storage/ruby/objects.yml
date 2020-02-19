@@ -158,10 +158,10 @@
     singleton objects are stateless. They are thus somewhat less prone to abuse.
   tags: ['013-singleton-objects']
 
-- question: How do you call the parent implementation with the child's implementation arguments?
-  answer: Call `super` without arguments
+- question: "How do you call the parent implementation with the child's implementation arguments?"
+  answer: "Call `super` without arguments"
   tags: []
 
-- question: How do you ensure that a block is not passed to the parent?
-  answer: `super(&nil)` will ensure that a block is not passed to the parent
+- question: "How do you ensure that a block is not passed to the parent?"
+  answer: "`super(&nil)` will ensure that a block is not passed to the parent"
   tags: []
