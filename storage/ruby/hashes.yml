@@ -41,4 +41,18 @@
     options = {logger: false}
     logger = options.fetch(:logger){Logger.new($stdout)}
     ```
+
+    Another form is the two argument form:
+
+    ```
+    options.fetch(:my_value, 3)
+    ```
+
+    However, Avdi doesn't like the two argument form since the default values are automatically computed.
+  tags: []
+
+
+- question: How do you provide a default for a nested hash?
+  answer: |
+    config2.fetch(:database){{}}.fetch(:type){'sqlite'}
   tags: []
