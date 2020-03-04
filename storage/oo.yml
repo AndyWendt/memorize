@@ -24,3 +24,17 @@
 - question: What is a good pattern to remove uncertainty in code and state intent better?
   answer: The Null Object or Special Case Pattern
   tags: []
+
+- question: |
+    Why do some operators, such as `+`, not return the same Subclass (i.e. a sub class of array)?
+  answer: |
+    Because some of them are written in C and not in Ruby, they have hard coded return types.
+  tags: ['018-subclassing-array']
+
+- question: How do you get a class to behave like a core ruby class?
+  answer: |
+    Use delegation instead of inheritance.
+    Use delegation, an internal array, override the appropriate methods, and import enumerable or use def delegator.
+  tags: ['018-subclassing-array']
+
+
