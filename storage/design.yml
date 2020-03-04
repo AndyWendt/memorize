@@ -1,0 +1,19 @@
+---
+
+- question: What is a command method (as in command query separation)?
+  answer: One that causes change in the world around it
+  tags: ['017-pay-it-forward']
+
+- question: What is a query method (as in command query separation)?
+  answer: It returns information
+  tags: ['017-pay-it-forward']
+
+- question: Explain Command-Query Separation
+  answer: |
+    Keeping methods that command and methods that query seperate makes that program
+    simpler and more comprehensible.  When sent a message, you can pay it back or
+    pay it forward but never both.
+
+    For instance having a method optionally yield a job ID would not violate this principle
+  tags: ['017-pay-it-forward']
+

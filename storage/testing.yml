@@ -1,0 +1,9 @@
+---
+
+- question: What are symptoms of brittle mockist tests?
+  answer: |
+    Violating Command-Query Separation Can Lead to Mockist tests being brittle.
+    You tend to see this when you have to continue to add boiler plate to your mocks.
+    Don't have methods that both command and query at the same time
+  tags: ['017-pay-it-forward']
+
