@@ -90,12 +90,12 @@ module Memorize
 
       def render_table(question_hash, askee_answer, improvement = nil)
         rows = [
-          ['Question', TTY::Markdown.parse(question_hash['question'])],
-          ['Answer', TTY::Markdown.parse(question_hash['answer'])],
-          ['Your Answer', TTY::Markdown.parse(askee_answer)],
+          ['Question', question_hash['question']],
+          ['Answer', question_hash['answer']],
+          ['Your Answer', askee_answer],
         ]
 
-        rows << ['Improvement', TTY::Markdown.parse(improvement)] unless improvement.nil?
+        rows << ['Improvement', improvement] unless improvement.nil?
 
         rows.map do |row|
           row[0] = format_row_heading(row[0])
