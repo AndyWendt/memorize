@@ -1,5 +1,5 @@
 ---
 
 - question: How can you easily ensure that an array key exists?
-  answer: `[].fetch(10)` will raise an index not found error
+  answer: "`[].fetch(10)` will raise an index not found error"
   tags: []
