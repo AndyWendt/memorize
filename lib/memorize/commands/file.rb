@@ -7,7 +7,7 @@ require 'tty-table'
 require 'pastel'
 require 'pry'
 require_relative '../command'
-require_relative '../../../lib/definition_loader'
+require 'question_loader'
 
 module Memorize
   module Commands
@@ -108,12 +108,7 @@ module Memorize
 
       def questions
         filename = "#{Dir.getwd}/#{@path}"
-        definition_loader = DefinitionLoader.new
-        if ::File.directory?(filename)
-          definition_loader.read_directory(file)
-        else
-          definition_loader.read_file(filename)
-        end
+        QuestionLoader.new.retrieve(filename)
       end
     end
   end

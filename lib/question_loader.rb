@@ -1,6 +1,16 @@
 require 'yaml'
 
-class DefinitionLoader
+class QuestionLoader
+  def retrieve(filepath)
+    if ::File.directory?(filepath)
+      read_directory(filepath)
+    else
+      read_file(filepath)
+    end
+  end
+
+  private
+
   def read_file(filepath)
     YAML.load(::File.read(filepath))
   end
