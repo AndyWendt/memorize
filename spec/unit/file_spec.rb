@@ -1,4 +1,4 @@
-require 'memorize/commands/file'
+require 'lib/memorize/commands/file'
 
 RSpec.describe Memorize::Commands::File do
   it "executes `file` command successfully" do

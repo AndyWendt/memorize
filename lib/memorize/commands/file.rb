@@ -7,6 +7,7 @@ require 'tty-table'
 require 'pastel'
 require 'pry'
 require_relative '../command'
+require_relative '../../../lib/definition_loader'
 
 module Memorize
   module Commands
@@ -107,16 +108,12 @@ module Memorize
 
       def questions
         filename = "#{Dir.getwd}/#{@path}"
-        yamls = []
+        definition_loader = DefinitionLoader.new
         if ::File.directory?(filename)
-          Dir["#{filename}/*.yml"].each do |file|
-            yamls.concat(YAML.load(::File.read(file)))
-          end
+          definition_loader.read_directory(file)
         else
-          yamls = YAML.load(::File.read(filename))
+          definition_loader.read_file(filename)
         end
-
-        yamls
       end
     end
   end
