@@ -12,7 +12,11 @@ class QuestionLoader
   private
 
   def read_file(filepath)
-    YAML.load(::File.read(filepath))
+    begin
+      YAML.load(::File.read(filepath))
+    rescue
+      raise "Invalid file #{filepath}"
+    end
   end
 
   def read_directory(path)

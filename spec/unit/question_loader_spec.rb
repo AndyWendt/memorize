@@ -14,4 +14,9 @@ RSpec.describe QuestionLoader do
     expect(contents).to include("foo" => true)
     expect(contents).to include("baz" => true)
   end
+
+  it "throws an error when an invalid file is found" do
+    filepath = "#{Dir.getwd}/spec/support/invalid.yml"
+    expect { QuestionLoader.new.retrieve(filepath) }.to raise_error("Invalid file #{filepath}")
+  end
 end
