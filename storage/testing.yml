@@ -7,3 +7,12 @@
     Don't have methods that both command and query at the same time
   tags: ['017-pay-it-forward']
 
+- question: What are downsides to violating "Don't mock what you don't own?"?
+  answer: |
+    * results in unclear boundaries between what is tested and what is controlled
+  tags: []
+
+- question: Describe don't mock what you don't own
+  answer: |
+    Use adapters to wrap third party services.
+  tags: []
