@@ -56,3 +56,12 @@
   answer: |
     config2.fetch(:database){{}}.fetch(:type){'sqlite'}
   tags: []
+
+- question: What is an advantage and difference of `to_hash` vs `to_h`?
+  answer: |
+    `to_hash` is expected to act like a hash and thus the object can be used like one:
+
+    ```
+    a.merge(b) # works if b#to_hash exists.  Doesn't work if using b#to_h
+    ```
+  tags: []
