@@ -15,7 +15,10 @@
 
 - question: How do you provide a default value for a hash key?
   answer: |
-    Use `Hash#fetch()` by providing it a block: `Hash.fetch(:my_key) { 'my default value' }`
+    Two ways using `Hash#fetch()`:
+
+    * Providing it a block: `Hash.fetch(:my_key) { 'my default value' }`
+    * Providing a second argument: `Hash.fetch(:key, default_value)`
   tags: []
 
 - question: How do you raise a custom exception if a hash key is not present?
@@ -54,6 +57,8 @@
 
 - question: How do you provide a default for a nested hash?
   answer: |
+    Provide an empty hash as the default value for each layer of nesting:
+
     config2.fetch(:database){{}}.fetch(:type){'sqlite'}
   tags: []
 
