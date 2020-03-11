@@ -6,6 +6,7 @@ A tool to memorize... who would have guessed?
 
 * Add in the ability to pull in remote questions
 * Run only tags
+* Add newlines for strings if they exceed the width of the terminal
 
 ## Usage
 
