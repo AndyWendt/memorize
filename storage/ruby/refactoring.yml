@@ -28,6 +28,10 @@
 
 - question: Describe barewords and when/how to use them
   answer: |
+    Barewords enable you to write code that is easy to change.  A bare word could be
+    a property, a function call, or a variable.  That allows for easier refactoring
+    and expressiveness.
+
     Use barewords to create methods since the values can come from almost anywhere
     without changing the implementation.  The implementation shouldn't care where
     the values come from.  Barewords are essentially method calls without curly's
