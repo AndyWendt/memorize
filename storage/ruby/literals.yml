@@ -37,7 +37,7 @@
 
 - question: Describe the `%W[]` syntax
   answer: |
-    Each whitespace delimited token because a string array element.  It allows for interpolation,
+    Each whitespace delimited token becomes a string array element.  It allows for interpolation,
     just as in double quoted strings. The advantage is that the elements read exactly as they would
     at the commandline (if calling system with the array).
   tags: ["005-array-literals"]
