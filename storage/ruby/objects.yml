@@ -172,7 +172,7 @@
 
 - question: How do you call the original method that was overridden in a module?
   answer: |
-    * Retrive it using: `original_send = Object.instance_method(:send)`
+    * Retrieve it using: `original_send = Object.instance_method(:send)`
     * Then bind it to self: `bound_send = original_send.bind(self)`
     * Then call it: `bound_send.call(name, *args, &block)`
   tags: []
