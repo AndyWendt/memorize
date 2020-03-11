@@ -135,7 +135,7 @@
 
 - question: What is the preferred way to create singleton objects in ruby?
   answer: |
-    Using a singleton instance of object is a bit more inention revealing than using a module since
+    Using a singleton instance of object is a bit more intention revealing than using a module since
     modules are typically used as namespaces and as means of sharing behavior.
 
     ```
