@@ -34,7 +34,15 @@
 - question: How do you get a class to behave like a core ruby class?
   answer: |
     Use delegation instead of inheritance.
-    Use delegation, an internal array, override the appropriate methods, and import enumerable or use def delegator.
+    Use delegation, an internal array, override the appropriate methods,
+    and import enumerable or use def delegator.
   tags: ['018-subclassing-array']
+
+- question: What are objects?
+  answer: |
+    They are recursive building blocks that encapsulate state and behavior and communicate
+    through the use of messages
+  tags: ["357-object-oriented-programming"]
+
 
 
