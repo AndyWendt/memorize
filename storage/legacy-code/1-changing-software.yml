@@ -1,0 +1,14 @@
+---
+
+- question: What are the four reasons to change software?
+  answer: |
+    1. Adding a feature
+    2. Fixing a bug
+    3. Improving the design
+    4. Optimizing resource usage
+  tags: []
+
+- question: What is different code wise between a bug fix and a new feature?
+  answer: Nothing intrinsically since they both change behavior.
+  tags: []
+
