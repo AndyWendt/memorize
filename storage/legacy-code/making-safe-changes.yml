@@ -23,7 +23,12 @@
 
 - question: Describe Preserve Signatures
   answer: |
+    Preserve Signatures is a way to extract/break dependencies by moving methods
+    by calling a new method directly from the original one with the same set of parameters.
+    This technique is particularly well suited for code that is not currently under test.
 
+    Using this technique you copy the signature exactly from the original method and then
+    remove any type declarations if needed.
   tags: []
 
 - question: What are the two types of changes to code?
