@@ -2,6 +2,9 @@
 
 - question: What are some ways to safely change code?
   answer: |
+    * Hyperaware editing
+    * Single-goal editing
+    * Preserve Signatures
 
   tags: []
 
@@ -35,3 +38,19 @@
   answer: |
     Either it changes the behavior or it doesn't
   tags: []
+
+- question: Describe Lean on the Compiler
+  answer: |
+    Is fundamentally two steps:
+
+    1. Change a type declaration to raise type errors
+    2. Navigate to the error locations and fix the errors
+
+    However, it can be easy to introduce bugs when your code leans on inheritance too much.
+  tags: []
+
+- question: Describe Pair Programming usage in relation to breaking dependencies
+  answer: |
+    * Use it whenever you break dependencies
+  tags: []
+
