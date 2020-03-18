@@ -1,0 +1,32 @@
+---
+
+- question: What are some ways to safely change code?
+  answer: |
+
+  tags: []
+
+- question: What is hyperaware editing?
+  answer: |
+    It is knowing what each of our keystrokes does. Understand when the change is a behavioral change and
+    when it is truly refactoring.  Tests allow you to know what the effects of a change are.  Pair programming
+    does as well.
+  tags: []
+
+- question: Describe single-goal editing
+  answer: |
+    When working on changing code, focus on one type of coding at a time.  i.e. either change
+    behavior or don't change behavior (refactor).  Write down ideas and come back to them.
+    "Programming is the art of doing one thing at a time"
+
+    Ask yourself: What am I doing?
+  tags: []
+
+- question: Describe Preserve Signatures
+  answer: |
+
+  tags: []
+
+- question: What are the two types of changes to code?
+  answer: |
+    Either it changes the behavior or it doesn't
+  tags: []
