@@ -11,5 +11,6 @@ A tool to memorize... who would have guessed?
 ## Usage
 
 ```
-exe/memorize file storage/ruby.yml # one file
+exe/memorize file storage/oo.yml # one file
+exe/memorize file storage/ruby # directory
 ```
