@@ -1,0 +1,7 @@
+---
+
+- question: Doing one thing
+  answer: |
+    "Programming is the art of doing one thing at a time"
+    - Working effectively with legacy code, Michael Feathers, pg 312
+  tags: []
