@@ -12,3 +12,11 @@
   answer: Nothing intrinsically since they both change behavior.
   tags: []
 
+
+- question: Describe Improving Design/refactoring/optimization in the context of changing software
+  answer: |
+    Improving the design of software is an activity where no functional changes are made
+    to the code but there are improvements to the code structure and design.  Tests
+    ensure that the behavior doesn't change and thus leads to easier to change code.
+  tags: []
+
