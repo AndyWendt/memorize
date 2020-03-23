@@ -9,14 +9,36 @@
   tags: []
 
 - question: What is different code wise between a bug fix and a new feature?
-  answer: Nothing intrinsically since they both change behavior.
+  answer: |
+    Nothing intrinsically since they both change behavior. However, a bugfix
+    seeks to preserve more than it changes.
   tags: []
 
 
 - question: Describe Improving Design/refactoring/optimization in the context of changing software
   answer: |
-    Improving the design of software is an activity where no functional changes are made
-    to the code but there are improvements to the code structure and design.  Tests
+    Improving the design of software is an activity where functionality remains invariant
+    but there are improvements to the code structure and design.  Tests
     ensure that the behavior doesn't change and thus leads to easier to change code.
   tags: []
 
+- question: What are the three things hold functionality invariant?
+  answer: |
+    Adding features, refactoring, and optimizing.
+  tags: []
+
+- question: What are the three risk mitigation questions?
+  answer: |
+    1. What changes do we have to make?
+    2. How will we know that we've done them correctly?
+    3. How will we know that we haven't broken anything?
+  tags: []
+
+- question: What are the downsides of avoiding changes in software?
+  answer: |
+    * If you avoid creating new classes and methods, the code grows larger and harder to
+      understand in place
+    * You fear making changes in the software even after reviewing it to make a change
+    * The team gets rusty at making the changes
+    *
+  tags: []
