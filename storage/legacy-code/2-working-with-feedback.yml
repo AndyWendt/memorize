@@ -74,3 +74,8 @@
     * covering scenarios and interactions in the application
     * pinning down behavior for a set of classes at a time
   tags: []
+
+- question: Why should you cover your code with tests before you change it?
+  answer: |
+    * You're more likely to catch any mistakes you make
+  tags: []

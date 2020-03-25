@@ -5,3 +5,10 @@
     "Programming is the art of doing one thing at a time"
     - Working effectively with legacy code, Michael Feathers, pg 312
   tags: []
+
+
+- question: Continual codebase improvement
+  answer: |
+    Using legacy code refactoring techniques help you to turn systems
+    that gradually degrade into systems that gradually improve.
+  tags: []
