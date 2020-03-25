@@ -68,3 +68,9 @@
     3. It touches the file system
     4. You have to do special things to your environment to run it
   tags: []
+
+- question: What are higher-level tests good for?
+  answer: |
+    * covering scenarios and interactions in the application
+    * pinning down behavior for a set of classes at a time
+  tags: []
