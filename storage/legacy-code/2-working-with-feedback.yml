@@ -37,7 +37,10 @@
 
 - question: What is a unit test?
   answer: |
-    Two qualities to identify one: 1. does it run fast 2. does it help localize problems.
+    Two qualities to identify one:
+
+      1. does it run fast
+      2. does it help localize problems
 
     They are tests in isolation of individual components of software that run fast.
     Those components are the most atomic behavioral units of a system.
