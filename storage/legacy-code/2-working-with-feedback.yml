@@ -1,0 +1,70 @@
+---
+
+- question: What are the two primary ways to make a change to a system?
+  answer: |
+    1. Edit and Pray (or spray and pray)
+    2. Cover and Modify (or cover and move)
+  tags: []
+
+- question: What is an analogy to describe care when it comes to making changes?
+  answer: |
+    Just because a surgeon is operating with care doesn't mean that they
+    can use a butter knife to operate with.
+  tags: []
+
+- question: When testing to provide coverage what is the goal?
+  answer: |
+    The goal is to test for change not only correctness.
+  tags: []
+
+- question: When should regression tests be run?
+  answer: |
+    Typically they are run periodically at the application (UI) level
+    after making changes to code.
+  tags: []
+
+- question: What tests are more important when working in legacy code?
+  answer: |
+    Unit tests over system/application level tests since
+    they are small, localized, and fast.
+  tags: []
+
+- question: What is a test harness?
+  answer: |
+    It is a generic term for the code that is written to exercise some piece of
+    software and the code needed to run it.
+  tags: []
+
+- question: What is a unit test?
+  answer: |
+    Two qualities to identify one: 1. does it run fast 2. does it help localize problems.
+
+    They are tests in isolation of individual components of software that run fast.
+    Those components are the most atomic behavioral units of a system.
+
+  tags: []
+
+- question: What are some of the problems with large tests?
+  answer: |
+    * Error localization
+    * Execution time
+    * Coverage: it is harder when working with higher level tests
+  tags: []
+
+- question: What is the purpose of unit tests?
+  answer: |
+    They are intended to fill in the gaps that larger tests (integration) can't.
+  tags: []
+
+- question: What is a slow unit test?
+  answer: |
+    One that takes 1/10th of a second to run.
+  tags: []
+
+- question: What are signs that a test is not a unit test?
+  answer: |
+    1. It talks to a database
+    2. It communictes across a network
+    3. It touches the file system
+    4. You have to do special things to your environment to run it
+  tags: []
