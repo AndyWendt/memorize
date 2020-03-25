@@ -14,7 +14,6 @@
     seeks to preserve more than it changes.
   tags: []
 
-
 - question: Describe Improving Design/refactoring/optimization in the context of changing software
   answer: |
     Improving the design of software is an activity where functionality remains invariant
@@ -40,5 +39,4 @@
       understand in place
     * You fear making changes in the software even after reviewing it to make a change
     * The team gets rusty at making the changes
-    *
   tags: []

@@ -12,7 +12,7 @@
     can use a butter knife to operate with.
   tags: []
 
-- question: When testing to provide coverage what is the goal?
+- question: When testing to provide coverage, what is the goal?
   answer: |
     The goal is to test for change not only correctness.
   tags: []
@@ -78,4 +78,14 @@
 - question: Why should you cover your code with tests before you change it?
   answer: |
     * You're more likely to catch any mistakes you make
+    * You should also understand what the code is doing
+  tags: []
+
+- question: What is the legacy code change algorithm?
+  answer: |
+    1. Identify the change points
+    2. Find test points
+    3. Break dependencies
+    4. Write tests
+    5. Make changes and refactor
   tags: []
