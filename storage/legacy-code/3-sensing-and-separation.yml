@@ -19,3 +19,7 @@
     it into a test harness without separating it.
   tags: []
 
+- question: What is the one primary tool to sense?
+  answer: Fake collaborators (either fakes/stubs or mocks)
+  tags: []
+
