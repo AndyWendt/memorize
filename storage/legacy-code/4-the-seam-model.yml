@@ -28,6 +28,8 @@
       * exploiting the scheme your language uses to resolve references
       * kinda like making out class methods in ruby
       * enabling point is the class path
+    * Object seams
+      * Best choice in OO languages
   tags: []
 
 - question: What is the enabling point of a seam?
