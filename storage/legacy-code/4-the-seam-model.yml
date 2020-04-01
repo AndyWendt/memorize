@@ -26,7 +26,7 @@
       * good in C & C++ but not too useful in more modern languages
     * Link seams
       * exploiting the scheme your language uses to resolve references
-      * kinda like making out class methods in ruby
+      * kinda like mocking out class methods in ruby
       * enabling point is the class path
     * Object seams
       * Best choice in OO languages
