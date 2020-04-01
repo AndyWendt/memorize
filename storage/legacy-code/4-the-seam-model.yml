@@ -7,7 +7,6 @@
     Make use of language features to expose seams.
   tags: []
 
-
 - question: What is an object seam?
   answer: |
     Where you are able to change the method that is called without
