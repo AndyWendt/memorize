@@ -37,3 +37,10 @@
     Every seam has an enabling point, a place where you can make the decision to use
     one behavior or another.
   tags: []
+
+- question: Why are seams important?
+  answer: |
+    * It allows you to improve performance and change behavior
+    * Seams are hidden boundaries
+    * Tests often cover the edges of those boundaries
+  tags: []
