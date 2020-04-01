@@ -1,0 +1,8 @@
+---
+
+- question: Define a seam
+  answer: |
+    A seam is a place where you can alter behavior in your program without editing in that place.
+
+    Make use of language features to expose seams.
+  tags: []
