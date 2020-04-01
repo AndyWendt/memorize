@@ -20,3 +20,18 @@
     into running code.  Each step exposes different types of seams.
   tags: []
 
+- question: What are the types of seams?
+  answer: |
+    * Preprocessing
+      * only in languages that have a build step before compilation
+    * Link seams
+      * exploiting the scheme your language uses to resolve references
+      * kinda like making out class methods in ruby
+      * enabling point is the class path
+  tags: []
+
+- question: What is the enabling point of a seam?
+  answer: |
+    Every seam has an enabling point, a place where you can make the decision to use
+    one behavior or another.
+  tags: []
