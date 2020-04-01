@@ -30,6 +30,7 @@
       * enabling point is the class path
     * Object seams
       * Best choice in OO languages
+      * You have object seams everywhere in ruby since things are statically linked
   tags: []
 
 - question: What is the enabling point of a seam?
