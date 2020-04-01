@@ -6,3 +6,17 @@
 
     Make use of language features to expose seams.
   tags: []
+
+
+- question: What is an object seam?
+  answer: |
+    Where you are able to change the method that is called without
+    changing the method that calls it.
+  tags: []
+
+- question: How do you define the types of seams in a programming language?
+  answer: |
+    Look at all of the steps involved in turning the text of a program
+    into running code.  Each step exposes different types of seams.
+  tags: []
+
