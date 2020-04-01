@@ -1,0 +1,21 @@
+---
+
+- question: What are the two reasons to break dependencies?
+  answer: |
+    1. sensing
+    2. separation
+  tags: []
+
+- question: What is sensing in relation to breaking dependencies?
+  answer: |
+    It means that you need to break dependencies since you
+    don't have access or you can't sense things that the code computes
+    and that should be under test
+  tags: []
+
+- question: What is Separation in relation to breaking dependencies?
+  answer: |
+    Separate dependencies when you can't test code because you can't get
+    it into a test harness without separating it.
+  tags: []
+
