@@ -1,0 +1,32 @@
+---
+
+- question: Why should you write clean code that works through TDD?
+  answer: |
+    * It's a predictable way to develop since you know when you're finished
+    * It gives you a chance to learn all of the lessons that the code can teach you
+    * It improves the user experience
+    * It lets your teammates count on you
+    * It feels good to write it
+  tags: []
+
+- question: What are the rules of TDD?
+  answer: |
+    * Write new code (behavior) only if an automated test has failed
+    * Eliminate duplication
+  tags: []
+
+- question: How does TDD change the development lifecycle?
+  answer: |
+    * Developers design the code as they go.  No big upfront design.
+      The design evolves organically as you progress through the code
+    * Developers write their own tests
+    * Developers must write code that is highly-cohesive and loosely coupled.
+  tags: []
+
+- question: What are the 3 stages of TDD?
+  answer: |
+    * Red: failing/not even compiling spec
+    * Green: commit sins and or hacks/hard coding to get it to work
+    * Refactor: to a better solution and eliminate duplication
+  tags: []
+
