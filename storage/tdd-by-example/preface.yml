@@ -30,3 +30,12 @@
     * Refactor: to a better solution and eliminate duplication
   tags: []
 
+- question: How does TDD change the developer's relationship with outside collaborators and processes?
+  answer: |
+    * QA can be proactive instead of reactive given reduced defect density
+    * Project managers can estimate accurately and involve customers daily since nasty surprises will be
+      limited
+    * Software developers can collaborate by the minute instead of daily or weekly given clearer technical conversations
+    * Software is shippable everyday since the build is always green
+  tags: []
+
