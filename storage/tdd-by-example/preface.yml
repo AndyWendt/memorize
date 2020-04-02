@@ -39,3 +39,22 @@
     * Software is shippable everyday since the build is always green
   tags: []
 
+- question: How should one manage fear during development?
+  answer: |
+    TDD helps manage fear through:
+
+    * Start learning concretely as quickly as possible when given a difficult situation
+    * Communicate more clearly
+    * Search out helpful, concrete feedback
+  tags: []
+
+- question: When the problem gets tougher, how should the tests change?
+  answer: They should cover less ground
+  tags: []
+
+- question: What is TDD philosophically?
+  answer: |
+    It is an awareness of the gap between decision and feedback and techniques
+    to control that gap
+  tags: []
+
