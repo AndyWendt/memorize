@@ -1,0 +1,11 @@
+---
+
+- question: What three things influence whether to adopt tdd or not?
+  answer: |
+    Method, motive, and opportunity.  Motive is not under your control
+    since you likely will not be able to simulate the circumstances
+    necessary to create said motive.
+
+    However, method and opportunity are largely under the control of the
+    developers.
+  tags: []
