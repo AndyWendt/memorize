@@ -18,4 +18,6 @@
 - question: Why should you prefer virtual methods?
   answer: |
     Since they allow for greater sensing and separation.
+
+    Non-virtual methods are akin to private methods that you can't overwrite.
   tags: []
