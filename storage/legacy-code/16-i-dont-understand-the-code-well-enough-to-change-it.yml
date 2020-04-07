@@ -1,0 +1,34 @@
+---
+
+- question: What are some ways to increase understanding of code?
+  answer: |
+    * Notes/Sketching
+    * Listing Markup
+    * Scratch Refactoring
+    * Deleting unused code
+  tags: []
+
+- question: What is Listing Markup in relation to increasing one's understanding of a given piece of code?
+  answer: |
+    It is a method to visually understand code through the printing of a listing and analysis using one or more methods.
+  tags: []
+
+- question: What are the four methods of Listing Markup and a short description for each?
+  answer: |
+    * Separating responsibilities
+      * Use a marker to group things and put a special mark by each group
+    * Understanding method structure
+      * Use comments and or drawn lines from opening/closing braces to denote blocks
+    * Extract methods
+      * Circle code that you'd like to extract and add a coupling count to it
+    * Understand the Effects of a change
+      * Put marks next to things that could change as the result of a change
+      * This aids with what you need to test
+  tags: []
+
+- question: What is scratch refactoring?
+  answer: |
+    It is refactoring and making changes to gain a greater understanding of code
+    without checking modified code back in.
+  tags: []
+

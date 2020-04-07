@@ -12,3 +12,8 @@
     Using legacy code refactoring techniques help you to turn systems
     that gradually degrade into systems that gradually improve.
   tags: []
+
+- question: What is a good quote about the usability of just plain sketches vs UML?
+  answer: |
+    "The precision doesn't have to be on paper" -- Michael Feathers, Legacy Code 210
+  tags: []
