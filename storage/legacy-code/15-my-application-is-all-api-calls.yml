@@ -1,0 +1,39 @@
+---
+
+- question: What are the reasons why it is often harder to work with code that is all API calls?
+  answer: |
+    1. harder to see how to make the structure better.  Not really any hints at design.
+    2. you don't own the API/interface of the code so you can't modify it.
+  tags: []
+
+- question: What are two approaches for dealing with code that is all API calls?
+  answer: |
+    1. Skin and Wrap the API
+    2. Responsibility-Based Extraction
+      * Extract to met
+  tags: []
+
+- question: What is Skinning and Wrapping an API?
+  answer: |
+     It's where you mirror, almost exactly the API
+          * No deps on API code
+          * Use preserve signatures in conjunction with this
+
+    You have a chance to get all of your code under test except for a thin wrapper layer.
+
+    Use when:
+
+    * The API is small
+    * You want to completely separate out third party deps
+    * You don't have tests and you can't write them because you can't test through the API
+  tags: []
+
+- question: What is Responsibility-Based Extraction?
+  answer: |
+    It's where you extract responsibilities to objects/methods.  You might not be able
+    to get all of your code under test with this method.
+
+    Use it:
+    * when the API is more complicated
+    * when you feel confident about making the extractions safely
+  tags: []
