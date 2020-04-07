@@ -21,6 +21,8 @@
 
     You have a chance to get all of your code under test except for a thin wrapper layer.
 
+    Touches on don't mock what you don't own.
+
     Use when:
 
     * The API is small
