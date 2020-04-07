@@ -1,0 +1,21 @@
+---
+
+- question: Should you call a library class directly?
+  answer: |
+    Avoid doing so.  Every direct call to a library class is a place where you could have a seam.
+
+    You may think that you'll never change them but that can become a self-fulfilling prophecy.
+  tags: []
+
+- question: Should you use language features to enforce design contraints?
+  answer: |
+    Often the answer is no since using language features, such as final or sealed, can
+    make testing the code nigh-on impossible.
+
+    Coding conventions can be as impactful as restritive language features.
+  tags: []
+
+- question: Why should you prefer virtual methods?
+  answer: |
+    Since they allow for greater sensing and separation.
+  tags: []
