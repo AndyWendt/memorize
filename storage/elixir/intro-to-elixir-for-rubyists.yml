@@ -1,0 +1,27 @@
+---
+
+- question: When does Elixir mutate data?
+  answer: Never.  It's a functional language
+  tags: []
+
+- question: How does assignment work in Elixir?
+  answer: It doesn't.  There is no assignment.  `=` is for matching.
+  tags: []
+
+- question: What is the `irb` equivalent in Elixir?
+  answer: `iex`
+  tags: []
+
+- question: What are the three things to Elixir programs?
+  answer: |
+    * data, modules, processes
+    * data: numbers, strings, functions, etc
+    * modules: groupings of functions and data structures
+    * processes:
+  tags: []
+
+- question: What is considered data in Elixir?
+  answer:  numbers, strings, lists, maps, functions, etc.
+  tags: []
+
+
