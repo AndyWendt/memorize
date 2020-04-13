@@ -25,3 +25,11 @@
   tags: []
 
 
+- question: What are modules in Elixir?
+  answer: They are containers for functions and data structures
+  tags: []
+
+- question: What is a process in Ruby?
+  answer: They are where the code runs and where state lives
+  tags: []
+
