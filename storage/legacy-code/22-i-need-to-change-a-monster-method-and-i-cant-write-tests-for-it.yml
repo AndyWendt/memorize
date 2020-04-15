@@ -76,4 +76,9 @@
     Not all behaviors are equal in an application.  Test the critical ones; extract the ones that aren't.
   tags: []
 
+- question: What is Break Out a Method Object?
+  answer: |
+    It's where you create an object only to do the work of your monster method.
+    This allows you to set instance variables and the like to make testing/refactoring easier.
+  tags: []
 
