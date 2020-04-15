@@ -24,3 +24,22 @@
     Feathers contemplated removing the subclasses (AddEmployee, Login) of the command.
     However, that would have made it harder for the clients to use.
   tags: []
+
+- question: When should you use abbreviations?
+  answer: |
+    Don't do it.
+  tags: []
+
+- question: What is orthogonality in relation to refactoring?
+  answer: |
+    It is a heuristic to tell if your classes change for different reasons.
+    It is where you only have one place in your code to make a change.
+  tags: []
+
+- question: What are the benefits of the open/closed principle?
+  answer: |
+    * Makes a design more flexible
+    * Distills a design; mainly through mechanical refactorings
+    * Makes changes faster and easier
+    * Allows the code to adhere to the open/closed principle
+  tags: []

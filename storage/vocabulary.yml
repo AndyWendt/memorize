@@ -17,3 +17,9 @@
   answer: ""
   tags: []
 
+- question: What is orthogonality in relation to object heirarchies?
+  answer: |
+    It is describing that the classes all of different responsibilities and that they
+    change for different reasons.
+    It is where you only have one place in your code to make a change.
+  tags: []
