@@ -41,6 +41,7 @@
     * Forget to pass a variable in
     * Accidently override a method in the same class or base class
     * Parameter and return value issues
+    * Conversion errors (types)
   tags: []
 
 - question: What is Introduce Sensing Variable?
@@ -53,6 +54,18 @@
     While you don't want to add behavior while refactoring, you can add code to assist with refactoring.
 
     Delete them after your refactoring session.
+  tags: []
+
+- question: What is Extract What You Know?
+  answer: |
+    Extract what you know that you can extract safely without tests and then add tests to cover them.
+
+    Pay attention to the coupling count of the extraction.  Ensure that the extraction has a low coupling
+    count.  Instance variables don't count usually.
+
+    When the coupling count is greater than 0, it is often beneficial to use a Sensing Variable.
+
+    This is a good place to start refactoring.
   tags: []
 
 
