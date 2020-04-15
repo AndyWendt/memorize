@@ -1,0 +1,15 @@
+---
+
+- question: How can you avoid the monster method refactoring?
+  answer: |
+    * Sprout Method(59)
+    * Sprout Class (63)
+  tags: []
+
+- question: What are the disadvantages of not tackling a monster method?
+  answer: |
+    * They are quagmires
+    * You then have to go back and attempt to understand them
+    * It quite often takes more time over the long run than just refactoring the method when
+      you're already there.
+  tags: []
