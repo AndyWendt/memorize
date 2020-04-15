@@ -1,0 +1,26 @@
+---
+
+- question: What is a good heuristic to start removing duplication?
+  answer: |
+    Start by removing small pieces of duplication.   That makes it easier to see the
+    larger areas of duplication later.
+  tags: []
+
+- question: What is a way to decide how to group things when removing duplication?
+  answer: |
+    Pay attention to the names.  However, it doesn't make much difference structurally at least
+    initially.
+  tags: []
+
+- question: What should you do when two methods look roughly the same?
+  answer: |
+    Extract the differences to other methods and oftentimes you can make the methods exactly
+    the same after a bit more refactoring.
+  tags: []
+
+- question: What is one of the dangers of removing too much duplication?
+  answer: |
+    You can make it more difficult for clients to use your code.  In the example,
+    Feathers contemplated removing the subclasses (AddEmployee, Login) of the command.
+    However, that would have made it harder for the clients to use.
+  tags: []
