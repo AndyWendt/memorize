@@ -36,7 +36,7 @@
     It is where you only have one place in your code to make a change.
   tags: []
 
-- question: What are the benefits of the open/closed principle?
+- question: What are the benefits of orthogonality?
   answer: |
     * Makes a design more flexible
     * Distills a design; mainly through mechanical refactorings
