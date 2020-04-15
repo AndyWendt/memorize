@@ -33,3 +33,15 @@
   answer: They are where the code runs and where state lives
   tags: []
 
+- question: What are the advantages of immutability of Elixir data?
+  answer: |
+    It allows for a powerful concurrent programming model.
+  tags: []
+
+- question: How do strings differ between Ruby and Elixir?
+  answer: |
+    'string' and "string" are essentially the same in Ruby whereas 'string' in
+    Elixir represents a `charlist`
+
+    Elixir utilizes UTF-8 strings.   Multiline strings are denoted by `"""`
+  tags: []
