@@ -13,3 +13,20 @@
     * It quite often takes more time over the long run than just refactoring the method when
       you're already there.
   tags: []
+
+- question: What are the varieties of monster methods?
+  answer: |
+    Most of the time, the methods are combinations of the below. d
+    * Bulleted: where there is little indentation
+    * Snarled: dominated by a single large conditional statement
+  tags: []
+
+- question: |
+    How should you use automated refactorings in conjunction with manual ones
+    when dealing with monster methods that are not tested?
+  answer: |
+    Either manually refactor or automatically refactor but never both at the same time.
+    The automatic refactorings (e.g. extract method) then allow you to add tests around the code
+    so that you can manually refactor easier.
+  tags: []
+
