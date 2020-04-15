@@ -97,3 +97,27 @@
 
     This works well with bulleted methods.
   tags: []
+
+- question: What is Extract to the Current Class First?
+  answer: |
+    It is the strategy to extract to the current class and then possibly extract to a class
+    that it depends on.   Extracting first to the current class allows you to analyze the naming
+    and intention of the code to see if it coincides with a dependency.
+
+    When the method name coincides with a variable that is an object, you should evaluate moving the method
+    to the object that the method name coincides with.
+  tags: []
+
+- question: What is Extract Small Pieces?
+  answer: |
+    It is moving in small steps to refactor a given set of code so that the chances for breaking things
+    are lowered.
+  tags: []
+
+- question: What is Be Prepared to Redo Extractions?
+  answer: |
+    It is undoing refactorings that you've done since you've learned more about the code
+    and identified ways that it could be done better.
+
+    Be willing to throw away changes.  You have VCS for a reason.
+  tags: []
