@@ -45,3 +45,10 @@
 
     Elixir utilizes UTF-8 strings.   Multiline strings are denoted by `"""`
   tags: []
+
+- question: What are Atoms in Elixir?
+  answer: |
+    They are similar to symbols in Ruby, however, they are more performant
+    and they are stored in a table that is not garbage collected.  Just as in Ruby,
+    do not create Atoms from user input.
+  tags: []
