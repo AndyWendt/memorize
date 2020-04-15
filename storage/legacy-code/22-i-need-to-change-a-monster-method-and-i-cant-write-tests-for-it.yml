@@ -30,3 +30,29 @@
     so that you can manually refactor easier.
   tags: []
 
+- question: What should be the goals of automated refactorings?
+  answer: |
+    * Separate logic from dependencies
+    * Introduce seams that make testing easier
+  tags: []
+
+- question: What are possible complications with Extract Method?
+  answer: |
+    * Forget to pass a variable in
+    * Accidently override a method in the same class or base class
+    * Parameter and return value issues
+  tags: []
+
+- question: What is Introduce Sensing Variable?
+  answer: |
+    Intoduce Sensing Variable adds a variable to sense conditions (often public on the class)
+    in the method that we are refactoring to aid refactoring and testing.
+
+    They are helpful for doing refactoring deep inside of snarled methods.
+
+    While you don't want to add behavior while refactoring, you can add code to assist with refactoring.
+
+    Delete them after your refactoring session.
+  tags: []
+
+
