@@ -82,3 +82,18 @@
     This allows you to set instance variables and the like to make testing/refactoring easier.
   tags: []
 
+- question: What is Skeletonizing methods?
+  answer: |
+    It is where you extract the condition and body of a method to separate methods and then all that
+    is left is the control structure and delegations to other methods.
+
+    This works well with Snarled methods.
+  tags: []
+
+- question: What is Find Sequences?
+  answer: |
+    It is where you extract the conditional and the body of it to a method. It is particularly
+    well suited to methods where you have a sequence of operations that happen one after another.
+
+    This works well with bulleted methods.
+  tags: []
