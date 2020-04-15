@@ -68,4 +68,12 @@
     This is a good place to start refactoring.
   tags: []
 
+- question: What is Gleaning Dependencies?
+  answer: |
+    Extract logic for the main behavior that you need to preserve and extract the things that
+    tests do not cover.
+
+    Not all behaviors are equal in an application.  Test the critical ones; extract the ones that aren't.
+  tags: []
+
 
