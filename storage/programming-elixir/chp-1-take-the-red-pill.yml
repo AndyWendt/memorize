@@ -1,0 +1,42 @@
+---
+
+- question: What are is the role of functions in Elixir?
+  answer: |
+    Functions are data transformers.  Functions can return functions.
+    The smaller and more reusable the better.
+  tags: []
+
+- question: What is unique about Parallelization in Elixir?
+  answer: |
+    It is treated as a simplification instead of something that needs to be
+    dreaded since it is simple to pass messages in Elixir between parallel
+    processes.
+  tags: []
+
+- question: How does Elixir treat responsibilities?
+  answer: |
+    It doesn't.  Get things done instead.
+  tags: []
+
+- question: How do you retrieve help information in Elixir?
+  answer: `h IO` or `h(IO)`
+  tags: []
+
+- question: How do you retrieve information about a value?
+  answer: `i 123`
+  tags: []
+
+- question: What are the two file extensions in Elixir?
+  answer: |
+    * `.ex` for programs to be compiled down into bytecode
+    * `.exs` for programs that are supposed to be ran like a script
+  tags: []
+- question: What file extension do tests have in Elixir?
+  answer: |
+    * `.exs`
+  tags: []
+
+- question: How do you compile a file in Elixir?
+  answer: |
+    `iex> c "hello.exs"`
+  tags: []
