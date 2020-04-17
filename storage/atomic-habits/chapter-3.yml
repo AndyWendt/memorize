@@ -27,9 +27,38 @@
     * Craving: the desire for the change in your internal state (wanting the reward)
     * Response: the actual thought/action which is the habit (obtaining the reward)
     * Reward: satisfying the craving (obtaining the reward)
+
+    These steps are continous
   tags: []
 
 - question: What determines if a response will happen?
   answer: |
     It depends on motivation, friction, and ability
+  tags: []
+
+- question: What happens when one of the stages is not sufficient?
+  answer: |
+    The habit will will not form.
+  tags: []
+
+- question: What are the two phases of the four steps?
+  answer: |
+    * The problem phase: cue & craving
+    * The solution phase: response & reward
+  tags: []
+
+- question: What are the 4 steps to creating a good habit?
+  answer: |
+    1. Make it obvious (cue)
+    2. Make it attractive (craving)
+    3. Make it easy (response)
+    4. Make it satisfying (reward)
+  tags: []
+
+- question: What are the 4 steps to breaking a bad habit?
+  answer: |
+    1. invisible (cue)
+    2. unattractive (craving)
+    3. difficult (response)
+    4. unsatisfying (reward)
   tags: []
