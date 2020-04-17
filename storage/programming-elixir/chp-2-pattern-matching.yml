@@ -1,0 +1,10 @@
+---
+
+- question: What is the `=`?
+  answer: |
+    It is the Match Operator.  It is more like an assertion than assignment.
+
+    `a = 1` succeeds if it can make the left hand side equal the right hand.
+    In this case it can since it can bind the variable `a` to the value `1`.
+  tags: []
+
