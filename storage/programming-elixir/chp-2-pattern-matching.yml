@@ -35,7 +35,7 @@
 - question: How do matches work with lists?
   answer: |
     Matches look to match whenever they can.   That even includes
-    setting the variables from the right list to the left.
+    binding the variables from the right list to the left.
 
     ```
     iex(1)> list = [1,2,3]
