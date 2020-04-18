@@ -7,6 +7,12 @@
     `a = 1` succeeds if it can make the left hand side equal the right hand.
     In this case it can since it can bind the variable `a` to the value `1`.
 
+    The match operator is similar to Erlang's except that Erlang's can be assigned
+    only once.
+
+    The pattern match is similar to an algebraic equation: `x = a + 1` since
+    it states that the right and the left are equal.
+
     However, the following does not work:
 
     ```
@@ -16,7 +22,64 @@
     ```
   tags: []
 
+- question: What is the closest thing to Assignment?
+  answer: Binding though not the same thing
+  tags: []
+
+
 - question: Which side(s) of the equal sign will Elixir change the variable on?
   answer: |
     The left side.
+  tags: []
+
+- question: How do matches work with lists?
+  answer: |
+    Matches look to match whenever they can.   That even includes
+    setting the variables from the right list to the left.
+
+    ```
+    iex(1)> list = [1,2,3]
+    [1, 2, 3]
+    iex(2)> [a,b,c] = list
+    [1, 2, 3]
+    iex(3)> a
+    1
+    iex(4)> b
+    2
+    iex(5)> c
+    3
+    ```
+  tags: []
+
+
+- question: What is the `_`?
+  answer: |
+    The underscore is a pattern match that says any value will be accepted.
+    Similar to a variable but discards any variable given to it.
+  tags: []
+
+- question: How many times can variables be bound per match?
+  answer: |
+    Once.  If you attempt to bind more than once in the same match it will error.
+    Binding can occur in later matches.
+
+    ```
+    iex(6)> [a, a] = [1,1]
+    [1, 1]
+    iex(7)> a
+    1
+    iex(8)> [b, b] = [1,2]
+    ** (MatchError) no match of right hand side value: [1, 2]
+    ```
+  tags: []
+
+- question: What is the Pin Operator (^)?
+  answer: |
+    It forces Elixir to use the existing value of the variable in a pattern match
+    instead of binding it.
+
+    iex(9)> a = 1
+    1
+    iex(10)> ^a = 2
+    ** (MatchError) no match of right hand side value: 2
   tags: []
