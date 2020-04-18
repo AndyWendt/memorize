@@ -19,11 +19,11 @@
   tags: []
 
 - question: How do you retrieve help information in Elixir?
-  answer: `h IO` or `h(IO)`
+  answer: "`h IO` or `h(IO)`"
   tags: []
 
 - question: How do you retrieve information about a value?
-  answer: `i 123`
+  answer: "`i 123`"
   tags: []
 
 - question: What are the two file extensions in Elixir?
@@ -31,6 +31,7 @@
     * `.ex` for programs to be compiled down into bytecode
     * `.exs` for programs that are supposed to be ran like a script
   tags: []
+
 - question: What file extension do tests have in Elixir?
   answer: |
     * `.exs`
