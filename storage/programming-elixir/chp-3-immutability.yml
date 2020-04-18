@@ -1,0 +1,28 @@
+---
+
+- question: How do most languages handle compound data structures and how does Elixir?
+  answer: |
+    Most languages pass them by reference and thus create challenges for parallel programming
+    and just deciphering how the variables got to where they are.
+
+    Elixir's data is immutable.  It copies values whenever it changes them
+  tags: []
+
+- question: What is the [ head | tail ] operator?
+  answer: |
+    It adds something to either the head or tail to create a new list:
+
+    ```
+    iex(1)> list1 = [3,2,1]
+    [3, 2, 1]
+    iex(2)> list2 = [4|list1]
+    [4, 3, 2, 1]
+    ```
+  tags: []
+
+- question: How does Elixir handle garbage collection?
+  answer: |
+    An Elixir application is divvied up between multiple processes and each process
+    has its own heap so each individual heap is much smaller. Garbage collection
+    thus runs much faster.
+  tags: []
