@@ -130,3 +130,44 @@
 
     number < atom < reference < function < port < pid < tuple < map < list < binary
   tags: []
+
+- question: What are the boolean operators and their special constraints?
+  answer: |
+    or, and, not only accept boolean comparisons without error
+  tags: []
+
+- question: What are the relaxed boolean comparisons?
+  answer: |
+    ||, &&, ! will accept arguments of any type.  false and nil are considered falsey.
+  tags: []
+
+- question: What is unique about integer division?
+  answer: |
+    It always returns a float
+  tags: []
+
+- question: How are variables scoped in Elixir?
+  answer: |
+    Lexically scoped.  Basic unit is the funciton body though modules also define a scope for variables at the top level of that module.
+  tags: []
+
+- question: How does elixir expect you to handle variable assignment inside of do...end blocks?
+  answer: |
+    That generates a warning.  Elixir expects you to use a case statement to assign or return
+    and not assign inside of a do end block
+
+    ```
+    # Wrong
+    case integer do
+      1 -> atom = :one
+      2 -> atom = :two
+    end
+
+    # Correct
+    atom =
+      case integer do
+        1 -> :one
+        2 -> :two
+      end
+  tags: []
+
