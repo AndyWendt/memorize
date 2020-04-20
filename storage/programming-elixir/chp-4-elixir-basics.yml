@@ -78,5 +78,55 @@
     * Head and tail are cheap
   tags: []
 
+- question: What are Keyword Lists?
+  answer: |
+    They are lists of two value tuples:
 
+    [foo: true, baz: false] turns into [{foo: true}, {baz: false}]
 
+    Can leave off brackets if the last argument in a function call.
+  tags: []
+
+- question: What are maps?
+  answer: |
+    They are collections of key/value pairs.
+
+    %{ "AL" => "Alabama" }
+
+    Keys can be tuples, strings, atoms. Same key type in the same map is NOT required
+
+    Use square bracket syntax for access
+  tags: []
+
+- question: What is the difference between Maps and Keywoard Lists?
+  answer: |
+    The keys in keyword lists can be repeated.  Use maps for an associative array and use Keyword lists for command-line params.
+  tags: []
+
+- question: What do you use for representing dates & times in Elxir?
+  answer: |
+    * Use DateTime and NaiveDateTime respectively
+  tags: []
+
+- question: What can elixir identifiers start with?
+  answer: |
+    Letter/underscore followed by letters, digits, and underscores
+  tags: []
+
+- question: What identifiers start with an uppercase letter?
+  answer: |
+    Module, record, protocol, and behavior
+  tags: []
+
+- question: What is unique about true, false, and nil?
+  answer: |
+    They all are aliases for atoms of the same name and they are equal
+  tags: []
+
+- question: What is unique about Elixir comparisons?
+  answer: |
+    You can compare values of different types.  If they are compatible, the comparison uses natural ordering. Otherwise,
+    the following rule is used:
+
+    number < atom < reference < function < port < pid < tuple < map < list < binary
+  tags: []
