@@ -42,3 +42,41 @@
     * Max exponent of 10^308
   tags: []
 
+- question: What can an Atom be comprised of?
+  answer: |
+    UTF-8 letters & combining marks, digits, underscores, @.  Can end with ! or ?.
+  tags: []
+
+- question: How are regular expressions represented?
+  answer: |
+    * ~{regexp} or ~{regexp}opts
+    * The semicolons can be swapped out for other delimeters but they are better than forward slash since
+      you have to escape less inside the expression.
+  tags: []
+
+- question: What is an Elixir Tuple?
+  answer: |
+    It is an ordered collection of values with typically 2 to 4 elements.
+  tags: []
+
+- question: How are Tuples typically used in regards to function returns?
+  answer: |
+    * First element is often `"ok"` if everything processed well
+      * {:ok, "next"}
+    * Errors: {:error, :enoent}
+  tags: []
+
+- question: Which type is closest to an array?
+  answer: |
+    Tuple.  Lists are not since they are a linked data structure.
+  tags: []
+
+- question: What is the most efficient way to accesss a list element?  The most expensive?
+  answer: |
+    * Linearly is the most efficient
+    * Random is the most inefficient
+    * Head and tail are cheap
+  tags: []
+
+
+
