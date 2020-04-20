@@ -1,0 +1,44 @@
+---
+
+- question: What are the value types?
+  answer: |
+    - Arbitrary-sized integers
+    - Floating-point numbers
+    - Atoms
+    - Ranges
+    - Regular expressions
+  tags: []
+
+- question: What are the system types?
+  answer: |
+    - PIDs and ports
+    - References
+  tags: []
+
+- question: What are the collection types?
+  answer: |
+    - Tuples
+    - Lists
+    - Maps
+    - Binaries
+  tags: []
+
+- question: What is the string type in Elixir?
+  answer: |
+    It is made up of other Elixir types.
+  tags: []
+
+- question: How can integers be represented?
+  answer: |
+    - Decimal (Can contain underscores)
+    - Hexadecimal
+    - Octal
+    - Binary
+  tags: []
+
+- question: What precision are floats and what is their maximum exponent?
+  answer: |
+    * IEEE 754 precision which is precise to 16 digits
+    * Max exponent of 10^308
+  tags: []
+
