@@ -1,0 +1,46 @@
+---
+
+- question: What is one measure of good code in relation to effects?
+  answer: |
+    Complicated effects to the outside world are the sum of much simpler effects internally in
+    the code.
+  tags: []
+
+- question: What are some ways to reason about effects?
+  answer: |
+    * Effect Sketches
+    * Reasoning Forward
+  tags: []
+
+- question: What is reasoning forward?
+  answer: |
+    Figure out where change can be detected and what the effects of the change are.
+    Start by tracing effects from change points
+  tags: []
+
+- question: What are the ways that Effect Propagation happens?
+  answer: |
+    * Return values propagate effects to the code that calls them
+    * Modifying objects that are passed in as paramters that are used later
+    * Modification of static or global data that is used later
+  tags: []
+
+- question: What is a heuristic for looking for effects?
+  answer: |
+    1. Identify the method that will change
+    2. If the method has a return value, look at its callers
+    3. See if the method modifies any values.  If it does, look at the methods that use
+       those values, and the methods that use those methods
+    4. Make sure you look for superclasses and subclasses that might be users of
+       these instance variables and methods
+    5. Look at parameters to the methods.  See if they or any objects that their methods return
+       are used by the code that you want to change
+    6. Look for global variables and static data that is modified in any of the methods
+       you've identified.
+  tags: []
+
+- question: How can programming languages assist with reasoning about effect propagation?
+  answer: |
+    Every language has things that can effect propagation.  If you know what they are then
+    you know how far you need to look.
+  tags: []
