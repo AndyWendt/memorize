@@ -44,3 +44,21 @@
     Every language has things that can effect propagation.  If you know what they are then
     you know how far you need to look.
   tags: []
+
+- question: What makes programming easier in regards to effects?
+  answer: Narrowing the effects in a program.
+  tags: []
+
+- question: How does reducing duplication assist with effects?
+  answer: |
+    It creates a smaller number of endpoints in effect sketches which often translates
+    into easier testing decisions.
+  tags: []
+
+- question: If encapsulation and testing are at odds, which one should you typically choose?
+  answer: |
+    Testing since they help reason about the code and define its behavior.  Encapsulation can
+    be gained later. Encapsulation is important but the why behind it is more important.  It
+    assists with having fewer paths through the code.
+  tags: []
+
