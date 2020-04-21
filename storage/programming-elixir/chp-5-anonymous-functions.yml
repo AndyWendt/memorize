@@ -1,0 +1,18 @@
+---
+
+- question: What is one difference between named and anonymous function invocations?
+  answer: |
+    Anonymous functions are called with a `.` and parentheses whereas named ones are not.
+  tags: []
+
+- question: How do you create multiple function bodies for an anonymous function?
+  answer: |
+    You create them inline.  The matching is done via patterns and the `_` can match anything:
+
+    ```
+    foo_bar = fn
+      {:ok, file} -> "foo"
+      {_, error} -> "error"
+    end
+  tags: []
+
