@@ -1,0 +1,53 @@
+---
+
+- question: When should higher level tests (ones at pinch points) be preferred over lower level (unit) tests?
+  answer: |
+    Only to drive out unit tests and get them in place and to detect changes in
+    clusters of classes.
+
+    It is a good way to start invasive work.
+  tags: []
+
+- question: What is an Interception Point?
+  answer: It is a point in an application where you can detect a particular change
+  tags: []
+
+- question: Why is it best to choose interception points to test close to your change?
+  answer: |
+    The more steps you have, the harder it is to know that you have it right.
+  tags: []
+
+- question: What is a Pinch Point?
+  answer: |
+    It is a natural encapsulation boundary.  An area where it is possible to write tests
+    to cover a wide area of changes.
+
+    Pinch points are determined by change points.
+  tags: []
+
+
+- question: How do you know if you found the correct Pinch Point?
+  answer: |
+    "If I break this method, will I be able to sense it in this place?"
+
+    Only find them for one or two changes at a time.
+  tags: []
+
+- question: How can effect sketches assist with finding encapsulation boundaries?
+  answer: |
+    If you draw an effect sketch for a class, one where you can see what depends on what,
+    you'll often notice groupings of methods and private variables that can be extracted
+    to their own class.
+  tags: []
+
+- question: What is the Pinch Point trap?
+  answer: |
+    Unit tests at pinch points can grow into mini-integration tests.  When you see the
+    tests start to grow too large, it is a smell that indicates that it is time to
+    break up the class under test.
+
+    However, it can be good to write rather large tests when testing legacy code to
+    get it under test.  That being said, the inclination should be to break the clunky
+    class apart.
+  tags: []
+
