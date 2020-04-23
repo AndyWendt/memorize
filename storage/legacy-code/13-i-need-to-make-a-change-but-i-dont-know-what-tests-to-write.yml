@@ -1,0 +1,75 @@
+---
+
+- question: Why are manual tests more useful for bug finding?
+  answer: |
+    Automating tests are good for specification and thus for preserving behavior.
+    However, they're not as well suited for exploratory bug finding.
+  tags: []
+
+- question: What is a characterization test?
+  answer: |
+    It is a test that assists with preserving behavior since it characterizes
+    the current behavior.  Writing tests for what the code should be is just an
+    act of bug finding that is not helpful.
+
+    Getting tests in place allows changes to be made deterministically.
+
+    Get into a state of curiousity about the code and write tests until you understand it.
+
+    It is documentation of the system's actual behavior.
+
+    The most valuable characterization tests exercise a specific path and exercise each
+    conversion along that path.
+  tags: []
+
+- question: What is the characterization test algorithm?
+  answer: |
+    1. use a piece of code in a test harnes
+    2. write an assertion that you know will fail
+    3. let the failure tell you what the behavior is
+    4. change the test so that it expects the behavior that the code produces
+    5. repeat
+  tags: []
+
+- question: What is the method use rule?
+  answer: |
+    Check to see if there are tests for a method.  If not, write them.
+  tags: []
+
+- question: What are characterization class heuristics?
+  answer: |
+    1. Look for tangled pieces of logic.  Consider introducing a sensing variable to characterize it
+    2. Make a list of things that could go wrong for the class or method and formulate tests to trigger them
+    3. Think about the inputs and specifically about what would happen if given extreme values
+    4. Discover invariants and write tests around them.  Often you will have to refactor to discover them.
+  tags: []
+
+- question: How do you start testing an untested class or method?
+  answer: |
+    First start with the easy, main intent of the class and then start testing its
+    idiosyncrasies
+  tags: []
+
+- question: What should you do when you find a bug?
+  answer: |
+    Be biased toward fixing it when you find it.  However, some users might rely on that behavior.
+  tags: []
+
+- question: What should you do when attempting to test a conditional branch?
+  answer: |
+    See if there's any other way that the test could pass.   Use sensing variables or debuggers.
+  tags: []
+
+- question: When we refactor, what are the two things that need to be checked?
+  answer: |
+    1. Does the behavior exist after the refactoring?
+    2. Is it connected correctly?
+  tags: []
+
+- question: What are the characterization test heuristics?
+  answer: |
+    1. Write tests to understand the code
+    2. write tests for the specific things you are going to change
+    3. Write tests for any extractions or moving of functionality
+  tags: []
+

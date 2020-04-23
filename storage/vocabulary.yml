@@ -23,3 +23,10 @@
     change for different reasons.
     It is where you only have one place in your code to make a change.
   tags: []
+
+- question: Heuristic
+  answer: |
+    A heuristic technique (/hjʊəˈrɪstɪk/; Ancient Greek: εὑρίσκω, "find" or "discover"), or a heuristic, is any approach
+    to problem solving or self-discovery that employs a practical method that is not guaranteed to be optimal,
+    perfect or rational, but which is nevertheless sufficient for reaching an immediate, short-term goal.
+  tags: []
