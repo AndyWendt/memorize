@@ -60,5 +60,7 @@
     Testing since they help reason about the code and define its behavior.  Encapsulation can
     be gained later. Encapsulation is important but the why behind it is more important.  It
     assists with having fewer paths through the code.
+
+    It's also a smell if encapsulation is causing problems that you don't have the right objects at the right level.
   tags: []
 
