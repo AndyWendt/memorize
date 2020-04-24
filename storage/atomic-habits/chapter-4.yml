@@ -1,0 +1,34 @@
+---
+
+- question: What is the first step in changing habits?
+  answer: |
+    It is defining what your current ones are.  It is similar to a characterization test when
+    testing.  You must characterize the current behavior before changing behavior.
+  tags: []
+
+- question: What is an effective technique to increase habit awareness from a subconcious to concious level?
+  answer: |
+    Use the Point-and-Calling technique.  A common example is pointing and vocalizing essential items
+    that you need before you leave the house.  "I have my car keys (point), I have my wallet (point), etc".
+
+    How might this technique be used when we are writing software to improve awareness?
+
+    e.g. "I'm about to use the mouse instead of a keyboard shortcut...I'm going to use keyboard shortcuts
+    to be more productive"
+
+    Hearing your bad habits spoken aloud makes the consequences seem more real.  You're getting yourself
+    to acknowledge the need for action.
+  tags: []
+
+- question: What is a habits scorecard?
+  answer: |
+    It is where you make a list of your daily habits and rate them as effective or ineffective
+    at benefitting you in the long run.
+  tags: []
+
+- question: What two questions are helpful to rate a habit?
+  answer: |
+    * "Does this behavior help me become the type of person I wish to be?"
+    * "Does this habit cast a vote for or against my desired identity?"
+  tags: []
+
