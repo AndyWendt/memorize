@@ -48,6 +48,8 @@
     2. Navigate to the error locations and fix the errors
 
     However, it can be easy to introduce bugs when your code leans on inheritance too much.
+
+    This is more helpful in statically typed languages.
   tags: []
 
 - question: Describe Pair Programming usage in relation to breaking dependencies
