@@ -18,7 +18,7 @@
     Because you aren't tested the use of the new code.
   tags: []
 
-- question: What is Sprout Method?
+- question: What is Sprout Method (59)?
   answer: |
     It is where you write new functionality, in a tested method, and then call it from
     the places where the functionality needs to be.
@@ -45,6 +45,42 @@
 - question: What are the advantages of Sprout Method?
   answer: |
     You are separating new code from old code.
+  tags: []
+
+- question: What is Sprout Class (63)?
+  answer: |
+    It is similar to Sprout Method except you instantiate a class and call a method on it.
+
+    When the dependencies or class setup is difficult, this is a good way to test the given functionality.
+
+    Sprout Class is often useful for extracting behavior that might be duplicated elsewhere. However, it does
+    add a level of complexity since it is creating a new class.
+  tags: []
+
+- question: What is a disadvantage of both Sprout Class and Sprout Method?
+  answer: |
+    They both create Temporal Coupling.  Their behavior is coupled with other behavior only because
+    the things need to happen at the same time.
+  tags: []
+
+- question: What is Wrap Method?
+  answer: |
+    It is where you either add functionlity by extracting the core bits of a method to a private method and then
+    adding your new private method and caling both from the original.  Or it is where you make a completely
+    new public interface, add your functionality as a private method, and then call both the original and your
+    new private method.
+
+    It can lead to poor names.
+  tags: []
+
+- question: What are benefits of Wrap Methood and Wrap Class?
+  answer: |
+    They both introduce seams.
+  tags: []
+
+- question: When testing Wrap Method, Sprout Method, what is a testing consideration?
+  answer: |
+    You'll often have to test private methods.
   tags: []
 
 
