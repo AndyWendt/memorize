@@ -1,0 +1,50 @@
+---
+
+- question: How quickly do you recoup your investment when you make a change in legacy systems?
+  answer: |
+    Typically changes cluster in systems so it is likely that you'll be back to the spot in question
+    soon.  However, even if it is years before you're back you'll likely have to read the code again
+    and the tests and extractions will assist with your comprehension.
+  tags: []
+
+- question: What is one way to introduce testing and refactoring to a team?
+  answer: |
+    Have them try it for a couple of weeks and see how it goes.
+  tags: []
+
+- question: |
+    Why is it a problem to add tested code to a system when using the refactorings in this chapter?
+  answer: |
+    Because you aren't tested the use of the new code.
+  tags: []
+
+- question: What is Sprout Method?
+  answer: |
+    It is where you write new functionality, in a tested method, and then call it from
+    the places where the functionality needs to be.
+
+    1. Identify where to add
+    2. identify the method call with parameters
+    3. identify the return value
+    4. TDD
+  tags: []
+
+- question: |
+    When the dependencies in the class where you are adding a sprout method are really bad and making an instance
+    would require faking a ton of constructor arguments, what do you do?
+  answer: |
+    One way is to use Pass Null (111).  Another way is to sprout a static public method.
+  tags: []
+
+- question: What are disadvantages of Sprout Method?
+  answer: |
+    In effect you're giving up on the method that you're adding it to since you're not
+    bringing it under test.
+  tags: []
+
+- question: What are the advantages of Sprout Method?
+  answer: |
+    You are separating new code from old code.
+  tags: []
+
+
