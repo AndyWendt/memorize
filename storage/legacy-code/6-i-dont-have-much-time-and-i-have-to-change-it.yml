@@ -83,4 +83,36 @@
     You'll often have to test private methods.
   tags: []
 
+- question: What is Wrap Class?
+  answer: |
 
+    One method is to use the Decorator Pattern (thought the traditional decorator pattern
+    utilizes a base class instead of an interface).  It is where you take in a class/interface, wrap the method that
+    you intend to wrap, and then add your functionality in the wrapping class.  You should maintain the same interface.
+
+    Another way is to add a completely new class that accepts the current class as a method parameter, calls that
+    method in a method named the same thing, and then adds the behavior to the new class/method.
+
+    The key thing about Wrap Class is that you're adding behavior without changing a current class.
+  tags: []
+
+- question: How do you choose between the two types of Wrap Class?
+  answer: |
+    When there are many calls to the class that is wrapped, it is best to use the Decorator style.
+
+    When the new behavior only has to happen in a couple of places, it is preferable to use the non-decorator style.
+  tags: []
+
+- question: When should you use Sprout Method vs Wrap Method?
+  answer: |
+    Use Sprout Method when the current code communicates a clear algorithm to the reader.
+
+    Use Wrap Method when the additional feature is equally as important as the current one.  This results in a
+    higher level algorithm.
+  tags: []
+
+- question: When should you prefer Wrap Class?
+  answer: |
+    * The new behavior is completely independent and thus you don't want to pollute the existing class
+    * When the existing class is too large
+  tags: []
