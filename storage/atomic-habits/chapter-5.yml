@@ -1,0 +1,35 @@
+---
+
+- question: What is an implementation intention?
+  answer: |
+    It is a plan for when and where you will invoke a certain habit.  This is
+    key since it uses two cues, time and place, to identify when the habit
+    should take place.
+
+    The format is: I will [behavior] at [time] in [location].
+
+    When situation X arises, I will perform response Y.
+
+    Motivation often isn't the issue, it's clarity. And the implementation intention provides that.
+  tags: []
+
+- question: What is the Diderot Effect?
+  answer: |
+    Obtaining a new possession, or doing something, often results in a spiral of consumption or additional tasks.
+    This is the connectedness of behavior.
+  tags: []
+
+- question: What is Habit Stacking?
+  answer: |
+    It is where you pair a new habit with an existing one.
+
+    "After [current habit], I will [new habit]"
+
+    The secret to creating a successful habit stack is selecting the right cue to kick things off.
+  tags: []
+
+- question: What cues are best for habit stacking?
+  answer: |
+    Highly specific and immediately actionable. Do not allow ambiguity: I will do ten push-ups after I close my laptop
+    for lunch.
+  tags: []
