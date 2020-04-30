@@ -1,0 +1,41 @@
+---
+
+- question: What is the difference between making changes in legacy systems and ones in well maintained systems?
+  answer: |
+    In well maintained systems it might take awhile to figure out what to change but once you do the
+    change is relatively simple and painless.
+  tags: []
+
+- question: What is lag time?
+  answer: |
+    It is how long the feedback loop is.  Have a low tolerance for long build and test times.
+  tags: []
+
+- question: What is the first step to breaking dependencies?
+  answer: |
+    Attempt to instantiate the classes in a test harness
+  tags: []
+
+- question: What do you do when you are having a hard time getting a piece of code under test?
+  answer: |
+    See if you can cut out a larger chunk of the code and put it under test.
+  tags: []
+
+- question: How do you break compile time dependencies?
+  answer: |
+    First, attempt to instantiate the class in a test harness to find out what dependencies it has.
+
+    Second, extract interfaces for the dependencies and use those interfaces in place of the concretions.
+    A compilation firewall.
+
+    Thirdly, move those extracted classes to packages so that they
+  tags: []
+
+- question: What principle applies to minimizing the effect of a change?
+  answer: |
+    The DIP Dependency Inversion Principle since relying on abstractions instead of concretions reduces
+    the need and risk of change.  Mostly this is for compileable systems since the real interface
+    remains the same regardless of whether there is an "interface".
+
+    The DIP isn't just interfacing though, it means passing in your deps.
+  tags: []
