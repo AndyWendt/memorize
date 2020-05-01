@@ -19,4 +19,16 @@ RSpec.describe QuestionLoader do
     filepath = "#{Dir.getwd}/spec/support/invalid.yml"
     expect { QuestionLoader.new.retrieve(filepath) }.to raise_error("Invalid file #{filepath}")
   end
+
+  it 'should returns an empty array if no questions are found in a file' do
+    filepath = "#{Dir.getwd}/spec/support/empty_yaml_files/empty.yml"
+    contents = QuestionLoader.new.retrieve(filepath)
+    expect(contents.length).to eq(0)
+  end
+
+  it 'should returns an empty array if no questions are found in a directory' do
+    filepath = "#{Dir.getwd}/spec/support/empty_yaml_files"
+    contents = QuestionLoader.new.retrieve(filepath)
+    expect(contents.length).to eq(0)
+  end
 end
