@@ -26,4 +26,19 @@
     Isolated tests encourage high cohesion and loose coupling.kw
   tags: []
 
+- question: Before you begin a programming session, what is a good question to ask?
+  answer: |
+    "What is it we intend to accomplish?"
+  tags: []
 
+- question: Before you start testing, what is a good practice?
+  answer: |
+    Create a list of the tests that you will need to write.  This assists
+    with mitigating stress.
+  tags: []
+
+- question: Why should you not write tests en masse?
+  answer: |
+    Because it places you a lot farther from the green bar and it also makes it harder to
+    refactor if you make a mistake in one of the tests.
+  tags: []
