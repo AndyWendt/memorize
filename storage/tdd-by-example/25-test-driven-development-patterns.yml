@@ -1,0 +1,29 @@
+---
+
+- question: What is the difference between the noun and verb of test?
+  answer: |
+    * Noun: a procedure leading to acceptance or rejection
+    * Verb: poking at things and looking at the results
+  tags: []
+
+- question: How does fear relate to automated testing?
+  answer: |
+    When fear rises, manual testing decreases which causes more stress.  This decreases software quality.  With
+    automated testing, you can test more easier and thus lower the stress level.  This increases software quality.
+  tags: []
+
+- question: How fast do tests need to be and how can you make them faster?
+  answer: |
+    Fast enough so that you can run them often and by yourself.
+
+    Make them faster by not writing tests at a scale of the whole application.
+  tags: []
+
+- question: How isolated shoud tests be?
+  answer: |
+    They should ignore each other completely and be order independent.
+
+    Isolated tests encourage high cohesion and loose coupling.kw
+  tags: []
+
+
