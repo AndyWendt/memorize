@@ -1,5 +1,7 @@
 # Memorize
 
+[![Build Status](https://travis-ci.org/AndyWendt/memorize.svg?branch=master)](https://travis-ci.org/AndyWendt/memorize)
+
 A tool to memorize... who would have guessed? 
 
 ## Todos
