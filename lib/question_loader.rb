@@ -1,4 +1,5 @@
 require 'yaml'
+require 'pathname'
 
 class QuestionLoader
   def retrieve(filepath)

@@ -5,11 +5,13 @@
   tags: []
 
 - question: How does assignment work in Elixir?
-  answer: It doesn't.  There is no assignment.  `=` is for matching.
+  answer: |
+    It doesn't.  There is no assignment.  `=` is for matching.
   tags: []
 
 - question: What is the `irb` equivalent in Elixir?
-  answer: `iex`
+  answer: |
+    `iex`
   tags: []
 
 - question: What are the three things to Elixir programs?
