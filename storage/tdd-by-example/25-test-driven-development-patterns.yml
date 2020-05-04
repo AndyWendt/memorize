@@ -31,14 +31,26 @@
     "What is it we intend to accomplish?"
   tags: []
 
-- question: Before you start testing, what is a good practice?
+- question: Before you start testing and during, what is a good practice?
   answer: |
-    Create a list of the tests that you will need to write.  This assists
+    Create a list of the tests and refactorings that you will need to implement.  This assists
     with mitigating stress.
+
+    Getting these to work is more important than releasing code.
   tags: []
 
 - question: Why should you not write tests en masse?
   answer: |
     Because it places you a lot farther from the green bar and it also makes it harder to
     refactor if you make a mistake in one of the tests.
+  tags: []
+
+- question: When you are writing a story, what is the first thing you should do?
+  answer: |
+    Test first
+  tags: []
+
+- question: When you are writing a test, what is the first thing you should do?
+  answer: |
+    Assert First
   tags: []
