@@ -21,3 +21,41 @@
 
     Starter tests are often application level.
   tags: []
+
+- question: What is an Explanation Test?
+  answer: |
+    It is a technique to spread the adoption of TDD.  Ask for and given explanations in terms of tests.
+  tags: []
+
+- question: What is a Learning Test?
+  answer: |
+    It is where you test a third party library to learn about it and isolate the code in play to
+    just it.
+  tags: []
+
+- question: How do you handle Tangential ideas?
+  answer: |
+    Write down a test on the list and continue working on the list.
+  tags: []
+
+- question: How do you handle regressions?
+  answer: |
+    Write the smallest possible test that reproduces the regression.  Think of how you
+    could have known to write the test in the first place.
+  tags: []
+
+- question: When you are tired or stuck, what should you do?
+  answer: |
+    TDD provides ways to get around mental blocks:  obvious implementation, fake it, triangulation.
+    If you still can't get around the mental block, Take a break. The shower methodology.
+
+    When taking the break, evaluate the days goals and see if they still make sense and the implications
+    for your team and project.
+
+    Sometimes you do need to push on and press through it but oftentimes you just need to step away.
+  tags: []
+
+- question: What should you do when you feel lost?
+  answer: |
+    Throw away the code and start over.
+  tags: []
