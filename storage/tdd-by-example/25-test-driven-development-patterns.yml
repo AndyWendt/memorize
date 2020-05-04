@@ -54,3 +54,24 @@
   answer: |
     Assert First
   tags: []
+
+- question: What data should you use for test first tests?
+  answer: |
+    Data that makes the tests easy to follow.
+  tags: []
+
+- question: When should you use realistic data?
+  answer: |
+    * Testing real time systems using traces of actual data
+    * You are parallel testing using the output of the previous function
+    * Refactoring a simulation and expect precisely the same answers when finished
+  tags: []
+
+- question: Describe Evident Data?
+  answer: |
+    You are writing tests for The Reader.  Make the data and the connection between the data
+    as clear as possibe.
+
+
+  tags: []
+

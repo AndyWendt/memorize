@@ -1,0 +1,23 @@
+---
+
+- question: Describe one-step test
+  answer: |
+    It is working from the known to the unknown.
+  tags: []
+
+- question: Describe starter test
+  answer: |
+    Starter test is where you simplify what you are testing
+  tags: []
+
+- question: When testing something that is challenging, what test should you start with (starter test)?
+  answer: |
+    Test an invariant that does nothing.  One of the first questions that you should
+    ask yourself when writing a test is "where does this operation belong?"
+
+    Beginning with a real test will leave you too long without feedback
+
+    Start with inputs and outputs that are trivially easy to discover
+
+    Starter tests are often application level.
+  tags: []
