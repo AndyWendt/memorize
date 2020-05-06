@@ -1,0 +1,32 @@
+---
+
+- question: |
+    When you have a test that is making multiple assertions, is large, and is still red, what do you do?
+  answer: |
+    Break it up into multiple smaller tests.  You shouldn't go more than a few minutes without green.
+  tags: []
+
+- question: When you are testing an object that relies on an expensive object, what should you do?
+  answer: |
+    Mock it.  However, you may need tests against your mock in case the API changes.
+  tags: []
+
+- question: What do you do when you need to ensure that the class under test calls another class?
+  answer: |
+    Use what Kent Beck calls a Shelf Shunt.  However, this is handled by modern mocking libraries.
+  tags: []
+
+- question: What do you do when you need to assert a sequence of calls?
+  answer: |
+    Use log string.  It works well with Shelf Shunt. Rspec ordered or spies are a way to do this.
+  tags: []
+
+- question: How do you leave a programming session when programming alone?
+  answer: |
+    Leave mid-test or mid-sentence.
+  tags: []
+
+- question: How do you leave a programming session when programming in a team?
+  answer: |
+    Leave all of the tests running and green.  If an integration test breaks, throw away your code.
+  tags: []
