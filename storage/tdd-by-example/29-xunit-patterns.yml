@@ -1,0 +1,30 @@
+---
+
+- question: How should you ensure that a given piece of code works?
+  answer: |
+    Write assertions, black box style.  Use encapsulation to ensure that the internal
+    implementation is private.
+  tags: []
+
+- question: How do you handle test setup code duplication?
+  answer: |
+    Use fixtures in one of two ways:
+
+    * Methods on the class
+    * variables on the class created in setUp
+  tags: []
+
+- question: How do you ensure that external resources are properly closed in a test?
+  answer: |
+    Use teardown to properly close files etc
+  tags: []
+
+- question: How should test code look?
+  answer: |
+    It should be straight line code.
+  tags: []
+
+- question: How do you ensure that you write the tests that you have thought up already?
+  answer: |
+    Write placeholder comments for them.
+  tags: []
