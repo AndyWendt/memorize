@@ -1,0 +1,54 @@
+---
+
+- question: |
+    What are some problems with the tactics for adding code when you don't have a ton of time?
+  answer: |
+    One is that those tactics don't change the existing code so therefore you are never improving
+    the existing code nor getting it under test.
+
+    The existing code needs to get under test so that it is easy to change.  Fear stops this.
+    It is best to attack the beast head on. Using practices to get the tests in place
+  tags: []
+
+# Note on TDD: he jumped right to the implementation and did not fake it
+
+- question: What do you have to add to the TDD algorithm for legacy code?
+  answer: |
+    0. get the legacy class you want to change under test
+  tags: []
+
+- question: Why is TDD important when changing legacy code?
+  answer: |
+    It lets you concentrate on one thing at a time: refactoring or writing code.
+  tags: []
+
+- question: What is the problem with inheritance?
+  answer: |
+    If you want to use multiple features, defined in abstract classes, you can't easily without some really
+    messy, tightly-coupled code.  Using composition you can.
+  tags: []
+
+- question: When is it ok to violate the SRP?
+  answer: |
+    If the code is small and is fairly coherent and not tightly coupled with the rest of the code, then you should be fine.
+  tags: []
+
+- question: What is the most powerful refactoring?
+  answer: |
+    Rename class since people will be able to see possibilities that they might not have otherwise.
+  tags: []
+
+- question: What is Programming by Difference?
+  answer: |
+    It's easy to see the difference between classes at the same level but it's not as easy to see the differences
+    between the child and parent.
+
+    It allows you to make changes quickly and move to a cleaner design.
+
+    Be wary of LSP violations when refactoring inheritance heirarchies
+  tags: []
+
+- question: What is a normalized heirarchy?
+  answer: |
+    No class has more than one implementation of a method (no subclass overrides parent methods).
+  tags: []
