@@ -1,0 +1,45 @@
+---
+
+- question: What are the most common issues with attempting to get a class into a test harness?
+  answer: |
+    1. Objects of the class can't be created easily
+    2. The test harness won't easily build with the class in it
+    3. The constructor we need to use has bad side effects
+    4. Significant work happens in the constructor, and we need to sense it
+  tags: []
+
+- question: What is the best way to figure out if you can get a class into a test harness?
+  answer: |
+    Just do it.  Write a test case and attempt to create an object of the class.
+  tags: []
+
+- question: What is the case of an irritating parameter?
+  answer: |
+    It is where you have a parameter that is passed to the constructor of a class
+    that makes the class difficult to test
+  tags: []
+
+- question: How do you handle an Irritating Parameter?
+  answer: |
+    Use fakes, mocks, stubs, or even passing null.  You might need to extract an interface.
+
+    Pass Null and Extract Interface are two strategies for this.
+
+    Another two are Subclass and Override Method (need to be careful of changing behavior).
+  tags: []
+
+- question: When should you not pass null?
+  answer: |
+    Never in production unless you can't avoid it.  Use the Null Object Pattern instead.
+    Null objects are quite useful when a client doesn't care whether or not an operation
+    was successful.
+  tags: []
+
+- question: Is it ok to violate rules for fakes/test code?
+  answer: |
+    Absolutely.  When test code isn't going on production then you can break encapsulation.
+
+    However, the code should be clean, deduplicated (as much as is reasonable), and easy to change.
+  tags: []
+
+
