@@ -1,0 +1,24 @@
+---
+
+- question: Why is Fake It, Till You Make It important?
+  answer: |
+    It psychologically is beneficial since you always know where you stand.  In addition, it
+    controls the scope of the endeavors since you're focused on maintaining green.
+  tags: []
+
+- question: When do you abstract (Triangulation)?
+  answer: |
+    When you have two or more examples.
+  tags: []
+
+- question: When an implementation is obvious, do you still work in tiny steps?
+  answer: |
+    No, use the obvious implementation.
+  tags: []
+
+- question: How do you implement methods that deal with collections?
+  answer: |
+    Write the individual method first and then change it to work with a collection.
+  tags: []
+
+
