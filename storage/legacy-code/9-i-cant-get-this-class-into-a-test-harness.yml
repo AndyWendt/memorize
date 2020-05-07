@@ -63,3 +63,16 @@
     * use that method in tests
     * Preserve the original constructor for clients
   tags: []
+
+- question: What is a Construction Blob?
+  answer: |
+    It is where a large number of objects generated or a small number of objects are used to create a
+    multitude of other objects.
+  tags: []
+
+- question: What are good refactorings for Construction Blob?
+  answer: |
+    * Override Factory Method can help but it can be dangerous even though it's the default here
+    * Supersede Instance Variable is useful but one must be careful with memory issues
+  tags: []
+
