@@ -42,4 +42,24 @@
     However, the code should be clean, deduplicated (as much as is reasonable), and easy to change.
   tags: []
 
+- question: What is the case of the hidden dependency?
+  answer: |
+    It is where the constructor makes a call to a resource that can't easily be accessed in a
+    test harness.
+  tags: []
 
+- question: What are strategies to handle hidden dependency?
+  answer: |
+    * Parameterize Constructor (Primary one)
+    * Extract Interface can also help for the parameters passed in
+    * Extract and Override Getter
+    * Extract and Override Factory Method
+    * Supersede Instance Variable
+  tags: []
+
+- question: What is one algorithm to handle a hidden dependency safely?
+  answer: |
+    * create a new method that is in effect a secondary constructor
+    * use that method in tests
+    * Preserve the original constructor for clients
+  tags: []
