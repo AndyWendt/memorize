@@ -76,3 +76,40 @@
     * Supersede Instance Variable is useful but one must be careful with memory issues
   tags: []
 
+- question: How can you handle a case of the Irritating Global Dependency?
+  answer: |
+    In a simple case you can use the following refactorings:
+
+    * Parameterize Constructor
+    * Parameterize Method
+    * Extract and Override Call
+  tags: []
+
+- question: Why are global variables a bad thing?
+  answer: |
+    Because when they are used inside of a class then you don't know if or what that class is going to modify
+    just by looking at the public methods.  The class will have side-effects and makes it much more difficult
+    to understand programs.
+  tags: []
+
+- question: What is a way to enable singletons to be tested?
+  answer: |
+    Add a method `resetForTesting`:
+
+    ```
+    public void resetForTesting() {
+      instance = null;
+    }
+    ```
+
+    Introduce Static Setter is better when the singleton doesn't expose public methods or it
+    uses external resources that modify its state.
+
+    Also Sublclass and Override Method can make testing easier when the singleton is doing things that
+    we don't want it to do in a test harness (such as talking to the db).   Basically it entails
+    subclassing the singleton and create a public method called `setTestingInstance` on the base class that
+    you can use to set the subclass.
+
+    To get past the global deps, use parameterize constructor and parameterize method.
+  tags: []
+
