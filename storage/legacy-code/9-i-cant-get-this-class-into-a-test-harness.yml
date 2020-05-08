@@ -113,3 +113,22 @@
     To get past the global deps, use parameterize constructor and parameterize method.
   tags: []
 
+
+- question: How do you deal with an onion parameter so that you can test it?
+  answer: |
+    Use:
+
+    * Extract Interface
+    * Extract Implementer
+    * Pass Null
+
+    Side note: A DI container is also a good strategy
+
+    Also, this doesn't matter in a duck typing scenario
+  tags: []
+
+- question: How do you handle the case of an Aliased Parameter?
+  answer: |
+    An aliased Parameter is where you have an inheritance hierarchy and it would be difficult to
+    Extract an Interface.  Alternatives are Subclassing and Overriding method.
+  tags: []
