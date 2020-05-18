@@ -1,0 +1,29 @@
+---
+
+- question: What are some considerations when you want to test a private method?
+  answer: |
+    If making it public bothers you then you should consider extracting it.
+
+    Extraction has a couple of considerations:
+
+    * It's basically just a utility so clients shouldn't care about it.
+    * It mutates state and thus could effect the result of other methods in the class
+
+    Good design is testable, and code that isn't testable is bad.
+
+    The pain we feel working in a legacy code base can be an incredible impetus to change.
+  tags: []
+
+- question: What issues do sealed and final promote when used in public libraries?
+  answer: |
+    None if you're writing your code well.  Don't depend directly on libraries that are
+    out of your control.  Use adapters.
+  tags: []
+
+
+- question: How should you get ideas for names?
+  answer: |
+    Take a look at what each piece of code does from the perspective of this class, or what it calculates
+    for this class.  In addition, we should not use names that mention display components (or x components).
+    Names should hide the fact.
+  tags: []

@@ -17,3 +17,10 @@
   answer: |
     "The precision doesn't have to be on paper" -- Michael Feathers, Legacy Code 210
   tags: []
+
+- question: What is Command/Query Separation (CQRS)?
+  answer: |
+    A method should be a command, do something that modifies the internal state and don't return a value.
+
+    Or a query, one that returns a value but doesn't modify state.
+  tags: []
