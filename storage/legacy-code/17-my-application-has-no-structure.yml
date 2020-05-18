@@ -8,3 +8,19 @@
 
     The simple view helps people understand what would've been ideal.
   tags: []
+
+- question: What is Naked CRC?
+  answer: |
+    CRC stands for Class, Responsibility, and Collaborations
+
+    Mark up an index card with its name, its responsibilities, and its collaborators.
+
+    Naked CRC removes the words and uses motion and position to describe the interactions of a system.
+  tags: []
+
+- question: Explain conversation scrutiny
+  answer: |
+    Are the concepts that you're using in conversation the same ones that you're using in code?
+    When people talk about designs, they're trying to make other people understand them.  Put some of that
+    understanding in the code.
+  tags: []
