@@ -1,0 +1,15 @@
+---
+
+- quote: |
+    Architects are usually charged with the task of working out the big picture and making decisions that
+    preserve the big picture for the team.  That can work, but there is one strong caveat.
+    An architect has to be out in the team working with the members day-to-day, or else the coding diverges
+    from the big picture....  The brutal truth is that architecture is too important to be left exclusively
+    to a few people.  It's fine to have an architect, but the key way to keep an architecture intact is to make
+    sure that everyone on the team knows what it is and has a stake in it.
+  book: Working Effectively with Legacy Code
+  page: 215
+  author: Michael Feathers
+  tags: []
+
+

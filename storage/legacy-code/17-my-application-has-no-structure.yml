@@ -1,0 +1,10 @@
+---
+
+- question: What is telling the story of the system?
+  answer: |
+    First you ask the question and then you answer it using only a few concepts (2 or 3).
+
+    1. What is the architecture of the system?
+
+    The simple view helps people understand what would've been ideal.
+  tags: []
