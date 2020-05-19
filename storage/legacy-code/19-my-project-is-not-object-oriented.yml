@@ -1,0 +1,32 @@
+---
+
+- question: What challenges do procedural languages present when it comes to refactoring?
+  answer: |
+    They do not provide as many seams as OO languages.  Oftentimes the best you can do is think
+    really hard, patch the system, and hope for the best.
+
+    You really must watch your dependencies in these languages.
+  tags: []
+
+- question: What are some common refactorings for Procedural code to get it in a test harness?
+  answer: |
+    * Pinch point
+    * Link seam
+    * Preprocessing seam
+
+    Can use a Macro PreProcessor in C
+  tags: []
+
+- question: How do you add new behavior to procedural code?
+  answer: |
+    * Use TDD
+    * Put all of the pure logic in one set of functions so that the troublesome
+      dependencies can be kept at the periphery encapsulated by wrapper functions.
+  tags: []
+
+- question: How do you move to OO in a procedural language that has the capability?
+  answer: |
+    * Use Encapsulate Global References(339) to get the system under test
+  tags: []
+
+

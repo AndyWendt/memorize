@@ -1,0 +1,12 @@
+---
+
+- question: What are some of the naming conventions for tests?
+  answer: |
+    * Suffix Test for test classes
+    * Prefix Fake for fakes
+    * Prefix Testing for subclasses that are used to test parent classes only
+      * When using subclass and override method
+
+    Ergonomics is important.  You should consider how easy it is to navigate between tests and their
+    implementations.
+  tags: []
