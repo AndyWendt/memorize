@@ -1,0 +1,30 @@
+---
+
+- question: "What methods to use when you don't want to make a class worse?"
+  answer: |
+    * Sprout Method
+    * Sprout Class
+
+    Prefer sprout class.
+  tags: []
+
+- question: What is the main pragmatic point behind the SRP?
+  answer: |
+    Responsibility should be equated to main purpose.
+  tags: []
+
+- question: What are questions to ask to determine the main responsibility of a class?
+  answer: |
+    * "Why is this method here?"
+    * "What is it doing for the class?"
+
+    Legacy Code provides far more opportunities to utilize design skills than green field
+  tags: []
+
+
+- question: What are heuristics for seeing responsibilities?
+  answer: |
+    * Group Methods: look for common responsibilities between methods
+    * Hidden methods: they can often hide the responsibilities of another class
+      * If making a method bothers you, often it means that it needs to be on another class
+  tags: []
