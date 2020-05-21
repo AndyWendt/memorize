@@ -27,4 +27,26 @@
     * Group Methods: look for common responsibilities between methods
     * Hidden methods: they can often hide the responsibilities of another class
       * If making a method bothers you, often it means that it needs to be on another class
+    * Look for decisions (already made not that you are making) that can change: does something seem hard coded?
+      * Things happening at different levels of abstraction in the same method
+      * Typically, it pays to do extract method before you extract class
+    * Look for internal relationships between instance variables and methods
+      * Use feature sketches to display the lumps/interconnections between
+      * You'll often see pinch points when doing this
+    * Attempt to describe the primary responsibility of a class in a single sentence
+      * Keep adding clauses. What is the one thing that seems more important than others
+    * When other methods fail, do some scratch refactoring
   tags: []
+
+- question: What are the differences between feature and effect sketches?
+  answer: |
+    * With feature sketches, the arrows point toward the dependencies
+    * With effect skectches, the arrows point toward the things the method effects
+  tags: []
+
+- question: What are the two ways that the SRP can be violated?
+  answer: |
+    At the interface and the implementation level
+  tags: []
+
+
