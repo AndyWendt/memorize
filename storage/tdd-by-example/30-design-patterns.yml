@@ -31,3 +31,22 @@
 
     Best found through experience.
   tags: []
+
+- question: Describe a pluggable object
+  answer: |
+    Reduce the duplication of repeated conditionals through the use of a pluggable object.
+  tags: []
+
+- question: Describe Pluggable Selector Pattern
+  answer: |
+    Use reflection or meta programming to invoke a method rather than a concrete switch statement
+    since they get repetative.
+
+    Use it when there was inheritance with multiple claseses who each only had one method.
+  tags: []
+
+- question: Describe Factory Method
+  answer: |
+    It is a method that creates an object. The downside of it is that there's indirection.  The updside,
+    easy of use.
+  tags: []
