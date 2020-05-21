@@ -50,3 +50,28 @@
     It is a method that creates an object. The downside of it is that there's indirection.  The updside,
     easy of use.
   tags: []
+
+- question: Describe the Imposter pattern
+  answer: |
+    You mirror the API of the current implementation and change the implemenation to match your new desired
+    computation.  That allows you to easily swap it in.  Quack, quack... Duck typing.
+  tags: []
+
+- question: Describe the composite pattner
+  answer: |
+    Rather than have transaction, account, allaccounts... you can just treat the transaction and account
+    as essentially the same thing and roll them up.
+
+    Basically it is an object that is the composition of the behavior of a list of other objects.
+  tags: []
+
+- question: Describe the collecting parameter
+  answer: |
+    If you want to collect the results of an operation that is spread over multiple objects, pass a object parameter to a
+    method to collect the results.
+  tags: []
+
+- question: Describe the singleton pattern
+  answer: |
+    Don't
+  tags: []
