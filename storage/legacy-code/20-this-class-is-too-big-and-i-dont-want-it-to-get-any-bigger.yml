@@ -57,4 +57,20 @@
     You tackle them on an as needed basis.  Doing a binge often results in more bugs and instability.
   tags: []
 
+- question: What is the algorithm for extracting a class without getting it in a test harness?
+  answer: |
+    1. Identify the responsibility to separate
+    2. Move the instance variables that must move to a different part of the current class
+    3. Create new methods for the methods that you are moving in the current class
+      * prefix with "MOVING" and place near the instance variables
+    4. Create methods for parts of methods that will be oving
+      * Prefix with "MOVING" and place near the others
+    5. Doublecheck for instance variable usage outside of the new methods
+    6. Create the new class and move the instance variables and methods.  Instantiate in the old class.
+    7. Remove the MOVING prefix
+  tags: []
 
+- question: What is the most subtle bug that can be introduced when refactoring without tests?
+  answer: |
+    Those related to inheritance
+  tags: []
