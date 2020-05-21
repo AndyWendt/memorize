@@ -15,3 +15,19 @@
   answer: |
     It is an immutable object that doesn't have an identity.  Every operation returns a new object.
   tags: []
+
+- question: Describe the Null Object Pattern
+  answer: |
+    Essentially you represent a special case, null, with an object.  It has the same interface as the class
+    that you are creating a null object for.  There are tradeoffs for this, however.
+  tags: []
+
+- question: Describe template method
+  answer: |
+    It allows for the representation of invariants while allowing for future refinement through the use of
+    inheritance and abstract methods.
+
+    It is a method that only calls methods (a template).
+
+    Best found through experience.
+  tags: []
