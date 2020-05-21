@@ -1,0 +1,17 @@
+---
+
+- question: How does TDD change the desing process in relation to design patterns?
+  answer: |
+    Design should not be considered a phase.  It should be considered a process with refactoring at its core.
+  tags: []
+
+- question: Describe the Command pattern
+  answer: |
+    The command pattern allows you to take a complex method call (or message send) and encapsulate it in
+    an object with a common interface (the run method)
+  tags: []
+
+- question: Describe a value object
+  answer: |
+    It is an immutable object that doesn't have an identity.  Every operation returns a new object.
+  tags: []
