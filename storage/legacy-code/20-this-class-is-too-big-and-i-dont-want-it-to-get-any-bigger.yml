@@ -21,10 +21,9 @@
     Legacy Code provides far more opportunities to utilize design skills than green field
   tags: []
 
-
 - question: What are heuristics for seeing responsibilities?
   answer: |
-    1. Group Methods: look for common responsibilities between methods
+    1. Group Methods: look for common names and then responsibilities between methods
     2. Hidden methods: they can often hide the responsibilities of another class
       * If making a method bothers you, often it means that it needs to be on another class
     3. Look for decisions (already made not that you are making) that can change: does something seem hard coded?
@@ -49,7 +48,7 @@
 
 - question: What are the two ways that the SRP can be violated?
   answer: |
-    At the interface and the implementation level
+    At the interface and the implementation level.  The implementation is the more important and difficult one.
   tags: []
 
 - question: How do you handle a system of knarly classes?
