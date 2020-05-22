@@ -31,3 +31,10 @@
   answer: |
     To simplify control flows that have become too convoluted and twisted.
   tags: []
+
+- question: How and why would you use method object
+  answer: |
+    Use when you need to add a whole new kind of logic to the system.
+
+    Create an object that assigns the function parameters as class parameters.
+  tags: []
