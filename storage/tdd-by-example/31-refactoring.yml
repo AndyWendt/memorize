@@ -1,0 +1,33 @@
+---
+
+- question: What is observational equivalence?
+  answer: |
+    It is realizing that you need to write the appropriate number of tests to get the appropriate code
+    coverage to allow for refactoring.  Don't check code in that hasn't been tested thoroughly and would
+    fail silently if refactored.
+  tags: []
+
+- question: How do you reconcile differences?
+  answer: |
+    You gradually bring the two pieces of code closer together and then combine them when they are identical.
+
+    Often it is best by envisioning the last step.  If you want to eliminate an abstract class, you'll need to remove
+    all of the functionality from it and thus all of its methods.
+  tags: []
+
+- question: Describe isolate change
+  answer: |
+    Use it to make a concept clearer and easier to change in a multipart object.  Use Extract Method, Extract Object,
+    and Method Object.  Sometimes the additional indirection isn't worth it.  You have to balance it out.
+  tags: []
+
+- question: What are the two methods to migrate data/the api of a function?
+  answer: |
+    * Internal to external
+    * External to internal
+  tags: []
+
+- question: Why would you want to inline method?
+  answer: |
+    To simplify control flows that have become too convoluted and twisted.
+  tags: []
