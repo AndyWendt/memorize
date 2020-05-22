@@ -1,0 +1,57 @@
+---
+
+- question: How large should your steps be?
+  answer: |
+    They should vary but your steps should tend to be on the smaller side.
+  tags: []
+
+- question: What don't you have to test?
+  answer: |
+    Write tests until fear transfers into boredom.  Unless you distrust it, don't test code from others.
+  tags: []
+
+- question: What do good tests look like?
+  answer: |
+    Difficulty testing points to a design problem
+
+    * If you have long setup code then you're tests need to be split
+    * Setup duplication implies that there may be too many objects too tightly intertwined
+    * Long running tests
+    * Fragile tests
+  tags: []
+
+- question: What is the paradox of not future proofing?
+  answer: |
+    By not caring (as much) about the future you make your code more likely to be adaptable to the future.
+
+    "Code for tomorrow, design for today."
+
+    The Open/Closed principle is gradually satisfied
+  tags: []
+
+- question: How many tests should you write?
+  answer: |
+    Enough to gain confidence in the resulting code.  Ignore the code and black box test.
+  tags: []
+
+- question: When should you delete tests?
+  answer: |
+    Delete them if they are redundant as to confidence and communication.
+  tags: []
+
+- question: TDD versus application level tests
+  answer: |
+    Application level tests take too long between red and green and it's often quite a cultural shift and one of
+    responsibilities to put that on the non-devs.
+  tags: []
+
+- question: How do you test a codebase without tests?
+  answer: |
+    1. Limit the scope of the changes.  If the changes don't touch an area, don't touch it.
+    2. Break the deadlock between tests and refactoring. 
+  tags: []
+
+- question: How does TDD relate to design?
+  answer: |
+
+  tags: []
