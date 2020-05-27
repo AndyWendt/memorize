@@ -180,3 +180,11 @@
 
     Only use when you're confident that you will bring the class under test later.
   tags: []
+
+- question: What is Pull Up Feature?
+  answer: |
+    WHAT: Move a cluster of cohesive methods to a parent class to enable easier testing by subclassing.  This allows you to
+      remove the bad depedendcies.
+    WHY: When you have a cluster of cohesive methods on a class that don't reference any of the "bad"
+      dependencies, this allows you to directly extract the functionality to a new class that can be easily tested.
+  tags: []
