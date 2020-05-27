@@ -15,3 +15,13 @@
 - quote:
     "Code for tomorrow, design for today."
   page: 195
+
+- quote: |
+    Move toward interfaces that communicate responsibilities rather than implementation details.
+    This makes code easier to read and easier to maintain.
+  page: 327
+
+- quote: |
+    One pervasive problem in legacy code bases is that there often aren't any layers of abstraction:
+    the most important code in the system often sits intermingled with low-level API calls.
+  page: 328

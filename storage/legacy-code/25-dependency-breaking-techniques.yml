@@ -1,0 +1,32 @@
+---
+
+- question: What is adapt parameter?
+  answer: |
+    Use it when you can't Extract Interface or when a parameter is difficult to fake.
+
+    You find this when the parameter type is low level or specific to some implementation tech.
+    If an interface is already type hinted as the parameter type, you can't have an interface of an interface.
+
+    Don't depend on concretions.
+
+    Basically, wrap the parameter that is coming in to break the dependency.  However, you don't preserve signatures.
+
+    Could you preserve signatures to make it safer just to get it under test?
+
+    Mainly a problem for languages that don't emrace duck typing?
+  tags: []
+
+
+- question: What is Break Out Method Object?
+  answer: |
+    Don't use this if your method is small and doesn't use instance variables.
+
+    Use preserve signatures.
+
+    Use this if the method is large, it uses instance variables and methods and it is difficult to get the entire
+    class in a harness.
+
+    Make getters/setters on the initial class so that the broken out object can use them if need be.
+
+    You can also pass a data holding class to the new method object.
+  tags: []
