@@ -148,3 +148,11 @@
     WHAT: Use global sensing variables and dummy libraries that have functions with the same signatures (fakes)
     WHY: it is a tactic useful for procedural languages to substitue one method for another at compile time
   tags: []
+
+- question: What is Parameterize Constructor?
+  answer: |
+    WHAT: Instead of creating classes directly, pass them in as a paramter.
+    WHY: It allows you to extract instance creation out of a constructor.
+
+    You can use method arity to define multiple constructors.
+  tags: []
