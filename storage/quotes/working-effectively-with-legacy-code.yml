@@ -25,3 +25,8 @@
     One pervasive problem in legacy code bases is that there often aren't any layers of abstraction:
     the most important code in the system often sits intermingled with low-level API calls.
   page: 328
+
+- quote: |
+   Encapsulation is a great thing for classes, but the static area of a class really isn't apart of that class.  They can be used
+    as a staging area for things that don't quite belong to the class.
+  page: 346

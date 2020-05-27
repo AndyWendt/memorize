@@ -56,3 +56,15 @@
     You can also use Parameterize Method and Extract and Override Getter.  However, uses across multiple methods/classes
     is dirtier than EGR.
   tags: []
+
+- question: What is Expose Static Method?
+  answer: |
+    If a method doesn't rely on anything in the class but provides a function that may need to move to another, say to
+    a parameter that is passed in, then it can be made static so that it can be brought under test and eventually moved.
+
+    Preserve signatures while doing this.
+
+    The static area of a class really isn't apart of that class.
+
+    They can be used as a staging area for things that don't quite belong to the class.
+  tags: []
