@@ -30,3 +30,29 @@
 
     You can also pass a data holding class to the new method object.
   tags: []
+
+- question: What is Definition Completion?
+  answer: |
+    Is a way to override concretions for test.   They methods are defined in header files (virtual) but we provide the
+    concretion in the test class.
+
+    This sounds like stubs?
+
+    Good to break initial dependencies but can have issues when the language uses header files and confuses debuggers.
+
+    The duplicate definitions should be removed as soon as possible.
+  tags: []
+
+- question: What is Encapsulate Global References?
+  answer: |
+    When globals are used or modified near each other, they belong in the same class.
+
+    Utilize leaning on the constructor.
+
+    Additional followups are Introduce Static Setter, Parameterize Constructor, or Parameterize Method.
+
+    You can use Link Substitution however it often leads to worse code structure.
+
+    You can also use Parameterize Method and Extract and Override Getter.  However, uses across multiple methods/classes
+    is dirtier than EGR.
+  tags: []

@@ -14,3 +14,10 @@
   answer: Use methods and composite local variables to replace variables and instead of doing the full extraction
   tags: []
 
+- question: What are some good tips to name clases?
+  answer: |
+    Think about the methods that will be on the class.  The name should be good but not perfect.  You can always
+    rename later.
+
+    If you have a naming collision, consider renaming the other class.
+  tags: []
