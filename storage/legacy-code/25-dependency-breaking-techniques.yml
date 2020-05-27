@@ -142,3 +142,9 @@
   answer: |
     Use inheritance and use a parameter.
   tags: []
+
+- question: What is Link Substitution?
+  answer: |
+    WHAT: Use global sensing variables and dummy libraries that have functions with the same signatures (fakes)
+    WHY: it is a tactic useful for procedural languages to substitue one method for another at compile time
+  tags: []
