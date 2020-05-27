@@ -154,5 +154,5 @@
     WHAT: Instead of creating classes directly, pass them in as a paramter.
     WHY: It allows you to extract instance creation out of a constructor.
 
-    You can use method arity to define multiple constructors.
+    You can use method arity to define multiple constructors thus preserving existing functionality.
   tags: []
