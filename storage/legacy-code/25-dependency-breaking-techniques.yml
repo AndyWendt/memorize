@@ -68,3 +68,17 @@
 
     They can be used as a staging area for things that don't quite belong to the class.
   tags: []
+
+- question: What is Extract and Override Call?
+  answer: |
+    You have a dependency to a static method/class in a method, you can extract the method call to a protected method locally
+    so that you can override it in a testing subclass.
+
+    Useful for breaking deps on global variables and static methods.
+  tags: []
+
+- question: What is Extract and Override Factory Method?
+  answer: |
+    Basically if problematic object construction is happening in the constructor, it is troublesome for testing purposes.
+    You can add a protected method and override that in a testing subclass.
+  tags: []
