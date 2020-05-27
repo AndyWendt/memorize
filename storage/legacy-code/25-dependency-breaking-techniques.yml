@@ -188,3 +188,11 @@
     WHY: When you have a cluster of cohesive methods on a class that don't reference any of the "bad"
       dependencies, this allows you to directly extract the functionality to a new class that can be easily tested.
   tags: []
+
+- question: What is Push Down Dependency?
+  answer: |
+    WHAT: Make your current class abstract and push down all of the problematic dependencies into a new concrete
+      implementation.
+    WHY: Makes problematic dependencies easier to work with in a test harness by isolating them to the current abstract
+      class.
+  tags: []
