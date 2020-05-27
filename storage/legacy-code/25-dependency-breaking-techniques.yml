@@ -130,4 +130,15 @@
     Ultimately, you might be able to remove the static methods and just use the instance methods.
   tags: []
 
+- question: Describe Introduce Static Setter
+  answer: |
+    WHAT: ISS is where you start with a protected constructor, subclass the class and add a static method to set the
+      instance.
 
+    WHY: ISS allows you to set the instance of a Singleton in test.
+  tags: []
+
+- question: What is an alternative to a Singleton?
+  answer: |
+    Use inheritance and use a parameter.
+  tags: []
