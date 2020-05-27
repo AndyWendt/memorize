@@ -160,3 +160,11 @@
     This does increase depedencies across the system on the passed in class but that's a relatively minor
     concern that can be handled by other refactorings.
   tags: []
+
+- question: What is Parameterize Method?
+  answer: |
+    It is essentially the same thing with Parameterize Constructor.
+
+    WHAT: Instead of creating classes directly, pass them in as a paramter.
+    WHY: It allows you to extract instance creation out of a Method.
+  tags: []
