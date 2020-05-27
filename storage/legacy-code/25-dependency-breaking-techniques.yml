@@ -119,3 +119,15 @@
     Hold off until you get test coverage before you make a pervasive change.
   tags: []
 
+- question: What is Introduce Instance Delegator?
+  answer: |
+    What: Introduce Instance Delegator is where you delegate from an instance method to a class method.  This means that
+      you will likely need to pass an instance into the method or class that uses it.
+    Why: This is helpful whenever you are calling a static method that is difficult to depend on in a test.  Ideally,
+      the methods should be instance methods on their respective objects.  Such as `sin()` on `1` instead of a Math
+      utility class with the static method `sin()`.  This allows you to add an object seam.
+
+    Ultimately, you might be able to remove the static methods and just use the instance methods.
+  tags: []
+
+
