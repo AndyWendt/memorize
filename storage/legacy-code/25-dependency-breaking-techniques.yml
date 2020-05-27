@@ -155,4 +155,8 @@
     WHY: It allows you to extract instance creation out of a constructor.
 
     You can use method arity to define multiple constructors thus preserving existing functionality.
+    You can also add default parameters.
+
+    This does increase depedencies across the system on the passed in class but that's a relatively minor
+    concern that can be handled by other refactorings.
   tags: []
