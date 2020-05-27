@@ -168,3 +168,15 @@
     WHAT: Instead of creating classes directly, pass them in as a paramter.
     WHY: It allows you to extract instance creation out of a Method.
   tags: []
+
+- question: What is Primitivize Parameter?
+  answer: |
+    WHAT: Make a tested global function that is called by the class under test
+    WHY: This allows you to add functionality to a class that is near impossible to test.  However, the using code in
+      the class is not tested and thus should be viewed with suspiciion.  Use Sprout Class (Method too?) instead whenever possible.
+
+    A good precursor to Sprout Class on some occasions though on others just go to Sprout Class.
+    It leaves the code in a knarly state.
+
+    Only use when you're confident that you will bring the class under test later.
+  tags: []
