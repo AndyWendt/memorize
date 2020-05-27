@@ -82,3 +82,40 @@
     Basically if problematic object construction is happening in the constructor, it is troublesome for testing purposes.
     You can add a protected method and override that in a testing subclass.
   tags: []
+
+- question: What is Extract and Override Getter?
+  answer: |
+    This is useful in languages where Extract and Override Factory Method doesn't work as well.  Basically you create
+    setters so that you can change instances of created classes for testing purposes. Use a Lazy Getter. Memoization.  Used in singleton design pattern.
+
+    One downside is that someone might use the variable before it is initialized.
+
+    This is better than Extract and Override Call when there are multiple problematic methods.
+  tags: []
+
+- question: What is Extract Implementer?
+  answer: |
+    When the name of a class is perfect for the name of an interface, extract the implementer to create the needed
+    separation.  Subclassing the current class and pushing all of its concrete methods down into the subclass.
+
+    Don't use I for interfaces.
+  tags: []
+
+- question: What is Extract Interface?
+  answer: |
+    It is where you create an interface for a class and utilize it whereever that class was used.
+
+    You don't have to extract all of the public methods.
+  tags: []
+
+- question: How should you name interfaces?
+  answer: |
+    Your code shouldn't care if it is dealing with an interface. Start with basic class names and incrementally
+    add functionality so that other classes can be broken out later. You can then change the basic class to an interface
+    at a later date.
+
+    Think hard about naming when you don't have automated refactoring capabilities.
+
+    Hold off until you get test coverage before you make a pervasive change.
+  tags: []
+
