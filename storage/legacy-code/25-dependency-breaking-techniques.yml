@@ -196,3 +196,12 @@
     WHY: Makes problematic dependencies easier to work with in a test harness by isolating them to the current abstract
       class.
   tags: []
+
+- question: What is Replace Function with Function Pointer?
+  answer: |
+    WHAT: Create function pointers before the definitions, rename the current functions, change the addresses of the pointers.
+    WHY: When you need to break dependencies in procedural languages when you don't need something as robust as
+      Link Substitution or Definition Completion
+
+    Link Substituion doesn't provide the nice seams that this method does.
+  tags: []
