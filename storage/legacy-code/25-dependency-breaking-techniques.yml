@@ -205,3 +205,10 @@
 
     Link Substituion doesn't provide the nice seams that this method does.
   tags: []
+
+- question: What is Replace Global Reference with Getter?
+  answer: |
+    WHAT: Introduce a getter on the class for retrieiving global variables.  Override the getter in a testing subclass
+    WHY: It allows you to break global dependencies while being completely at compile time. A good technique for C
+      but consider upgrading to C++.
+  tags: []
