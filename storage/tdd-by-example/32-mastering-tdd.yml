@@ -53,5 +53,14 @@
 
 - question: How does TDD relate to design?
   answer: |
+    TDD is an implementation method for pattern driven design.  It drives you to emergent design and oftentimes
+    the patterns you thought you would use, you don't end up using.  TDD shortens the feedback loop on design
+    decisions.
+  tags: []
 
+- question: If you don't drive development with tests, what do you drive it with?
+  answer: |
+    Speculation?  Specification? (both from the same root).
+
+    Testing is an analysis technique for structuring all of the activities of development.
   tags: []
