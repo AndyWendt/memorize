@@ -212,3 +212,27 @@
     WHY: It allows you to break global dependencies while being completely at compile time. A good technique for C
       but consider upgrading to C++.
   tags: []
+
+- question: What is Subclass and Override method?
+  answer: |
+    It is a foundational technique for generating seams.
+
+    WHAT: You use inheritance in a test to modify behavior in a test
+    WHY: It allows you to test without modifying too much and thus distrubing untested code.
+  tags: []
+
+- question: What is Supersede Instance Variable?
+  answer: |
+    WHAT: Create a method to set a parameter on a class
+    WHY: For langauges that disallow virtual/abstract function calls in constructors (For those that do Extract and Override Method is better)
+      and if the object is not used in the constructor (use Extract and Override Getter in that case).  Less invasive than Introduce Static Setter.
+      Good choice over Parameterize Constructor when the constructor is a tangled mess so that you can get a sensing
+      variable in place.
+  tags: []
+
+- question: What is Template Redefinition?
+  answer: |
+    WHAT: Use C++ Templates and Type Defs to allow you to override methods for testing
+    WHY: Use inheritance-based techniques whenever possible, however, it can be useful when the code is already in
+      templates.
+  tags: []
