@@ -236,3 +236,9 @@
     WHY: Use inheritance-based techniques whenever possible, however, it can be useful when the code is already in
       templates.
   tags: []
+
+- question: What is Text Redefinition?
+  answer: |
+    WHAT: It is redefining the method of a class dynamically in test in an interpreted language such as Ruby
+    WHY: It allows you to easy change the behavior of a class at runtime
+  tags: []
