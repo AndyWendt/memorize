@@ -12,10 +12,6 @@
   author: Michael Feathers
   tags: []
 
-- quote:
-    "Code for tomorrow, design for today."
-  page: 195
-
 - quote: |
     Move toward interfaces that communicate responsibilities rather than implementation details.
     This makes code easier to read and easier to maintain.
